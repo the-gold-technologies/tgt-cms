@@ -169,7 +169,7 @@ export function AdminSidebar() {
       </div>
 
       {/* Navigation Links */}
-      <div className="custom-scrollbar flex-1 overflow-y-auto py-2">
+      <div className="custom-scrollbar no-scrollbar flex-1 overflow-y-auto py-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
         <nav className="space-y-1.5 px-6">
           {sidebarLinks.map((item, index) => {
             const isActive = pathname === item.href;

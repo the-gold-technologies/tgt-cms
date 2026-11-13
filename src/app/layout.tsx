@@ -66,7 +66,7 @@ export default async function RootLayout({
             {session ? (
               <div className="flex h-screen overflow-hidden p-[5px] font-sans">
                 <AdminSidebar />
-                <main className="flex-1 overflow-y-auto">
+                <main className="custom-scrollbar no-scrollbar flex-1 min-w-0 overflow-y-auto overflow-x-hidden [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
                   <div className="px-12 py-10">{children}</div>
                 </main>
               </div>

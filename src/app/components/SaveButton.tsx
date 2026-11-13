@@ -29,7 +29,7 @@ export const SaveButton: React.FC<SaveButtonProps> = ({
   if (!sticky) return button;
 
   return (
-    <div className="sticky bottom-3 z-20 col-span-2 -mx-2 mt-2 rounded-2xl bg-white/90 px-2 pt-3 pb-1 backdrop-blur-md">
+    <div className="sticky bottom-3 z-20 col-span-2 mt-2 rounded-2xl bg-white/90 px-2 pt-3 pb-1 backdrop-blur-md">
       {button}
     </div>
   );

@@ -132,14 +132,14 @@ export default function GlobalSEOPage() {
   }
 
   return (
-    <div className="animate-in fade-in mx-auto flex max-w-6xl flex-col gap-8 pb-20 duration-500">
-      <div className="flex items-end justify-between">
+    <div className="animate-in fade-in mx-auto flex w-full max-w-6xl flex-col gap-8 pb-20 duration-500">
+      <div className="flex flex-wrap items-end justify-between gap-4">
         <PageHeader
           title="Global SEO & Tracking"
           description="Manage website-wide meta tags, tracking codes, favicon, and social profiles."
         />
         <div className="mb-2">
-          <SaveButton onClick={handleSave} disabled={isSaving} className="w-auto px-10" />
+          <SaveButton onClick={handleSave} disabled={isSaving} sticky={false} className="w-auto px-10" />
         </div>
       </div>
 
