@@ -1,47 +1,22 @@
 import { PrismaClient } from "@prisma/client";
 import { PrismaPg } from "@prisma/adapter-pg";
 import pg from "pg";
-import { createClient } from "@supabase/supabase-js";
 import { deleteFromCloudinary, isOwnCloudinaryUrl } from "./cloudinary";
 
 const globalForPrisma = globalThis as unknown as {
   prisma: any;
 };
 
-const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
-const BUCKET = "uploadsFiles";
-
-function extractFilePath(publicUrl: string): string | null {
-  try {
-    const marker = `/object/public/${BUCKET}/`;
-    const idx = publicUrl.indexOf(marker);
-    if (idx === -1) return null;
-    return decodeURIComponent(publicUrl.slice(idx + marker.length));
-  } catch {
-    return null;
-  }
-}
-
-/** Deletes a file this CMS stored: on Cloudinary (current) or Supabase Storage (older uploads). */
+/** Deletes a file this CMS stored on Cloudinary. */
 async function deleteStoredFile(url: string) {
-  if (isOwnCloudinaryUrl(url)) return deleteFromCloudinary(url);
-  const path = extractFilePath(url);
-  if (!path) return;
-  const { error } = await supabase.storage.from(BUCKET).remove([path]);
-  if (error) {
-    console.warn("[cleanup] Failed to delete old file:", error.message);
-  } else {
-    console.log(`[cleanup] Deleted unused file: ${path}`);
-  }
+  if (isOwnCloudinaryUrl(url)) await deleteFromCloudinary(url);
 }
 
 /** Every stored-file URL anywhere inside a record (fields, JSON content, arrays, rich-text HTML). */
 function findStoredUrls(obj: unknown): string[] {
   const urls: string[] = [];
   if (typeof obj === "string") {
-    if (obj.includes(`/object/public/${BUCKET}/`) || isOwnCloudinaryUrl(obj)) {
+    if (isOwnCloudinaryUrl(obj)) {
       urls.push(obj);
     } else if (obj.includes("res.cloudinary.com/")) {
       // Rich text (e.g. a blog body): pick out the Cloudinary images inside the HTML

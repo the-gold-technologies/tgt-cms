@@ -29,7 +29,7 @@ if (missing.length) {
   process.exit(1);
 }
 
-// A plain client on purpose: the app's client (src/lib/prisma.ts) deletes Supabase files on delete
+// A plain client on purpose: the app's client (src/lib/prisma.ts) deletes Cloudinary files on delete
 const prisma = new PrismaClient({
   adapter: new PrismaPg(new pg.Pool({ connectionString: DATABASE_URL })),
 });

@@ -117,8 +117,11 @@ Generate a secure `.env` file at the root of `client/` containing your connectio
 # Primary PostgreSQL URI
 DATABASE_URL="postgresql://username:password@localhost:5432/tgt_database?schema=public"
 
-# File Storage Configuration (If executing external S3/Supabase bindings)
-NEXT_PUBLIC_STORAGE_URL="https://your-object-storage-endpoint"
+# Image uploads (Cloudinary)
+CLOUDINARY_CLOUD_NAME="your-cloud-name"
+CLOUDINARY_API_KEY="your-api-key"
+CLOUDINARY_API_SECRET="your-api-secret"
+CLOUDINARY_FOLDER="tgt"
 ```
 
 ### 4. Database Syncing

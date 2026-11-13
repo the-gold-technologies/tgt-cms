@@ -5,7 +5,7 @@
 This CMS application provides administrative management for The Gold Technologies website (`TGT-LandingPage`).
 The website reads all of its content from this CMS, and every change here must keep the two projects in sync.
 
-- **CMS**: `tgt-cms` — Next.js 16, Prisma + PostgreSQL (Supabase), NextAuth v5, Cloudinary (folder `tgt`) for uploads. Local: `http://localhost:3001`
+- **CMS**: `tgt-cms` — Next.js 16, Prisma + PostgreSQL, NextAuth v5, Cloudinary (folder `tgt`) for uploads. Local: `http://localhost:3001`
 - **Website**: `TGT-LandingPage` — Next.js 14 marketing site. Local: `http://localhost:3000`
 - **Seed**: `npm run seed` deletes all data in the database `DATABASE_URL` points to, then re-creates the content from `prisma/seed-data/*.json` and an admin from `SEED_ADMIN_EMAIL` / `SEED_ADMIN_PASSWORD`. Never run it unless the user asks.
 
