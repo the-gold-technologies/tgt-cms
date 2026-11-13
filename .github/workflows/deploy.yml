@@ -17,6 +17,13 @@ on:
     branches:
       - main
   workflow_dispatch:
+    inputs:
+      baseline:
+        description: >-
+          ONE-TIME ONLY: mark migration 0_init as already applied (production was created
+          with `db push`). Only done if the database matches the schema exactly.
+        type: boolean
+        default: false
 
 concurrency:
   group: tgt-cms-production
@@ -45,6 +52,7 @@ jobs:
       # The address the CMS listens on inside the VPS (set the repository variable
       # CMS_HEALTH_URL to override, e.g. http://127.0.0.1:3001/api/health).
       HEALTH_URL: ${{ vars.CMS_HEALTH_URL || 'http://127.0.0.1:3001/api/health' }}
+      BASELINE: ${{ inputs.baseline && 'true' || 'false' }}
 
     steps:
       - name: Checkout repository
@@ -85,10 +93,10 @@ jobs:
       - name: Install, build, migrate, swap and restart (rolls back on failure)
         run: |
           ssh -p "$VPS_PORT" "$VPS_USER@$VPS_HOST" bash -s -- \
-            "$VPS_APP_DIR" "$PM2_APP" "$HEALTH_URL" <<'EOF'
+            "$VPS_APP_DIR" "$PM2_APP" "$HEALTH_URL" "$BASELINE" <<'EOF'
           set -euo pipefail
           shopt -s dotglob nullglob
-          APP_DIR="$1"; PM2_APP="$2"; HEALTH_URL="$3"
+          APP_DIR="$1"; PM2_APP="$2"; HEALTH_URL="$3"; BASELINE="$4"
           BUILD="$APP_DIR/.deploy/build"
           PREV="$APP_DIR/.deploy/previous"
           MANIFEST="$APP_DIR/.deploy/swapped.txt"
@@ -110,6 +118,25 @@ jobs:
 
           echo "Building Next.js application..."
           npm run build || abort "Build failed"
+
+          if [ "$BASELINE" = "true" ]; then
+            echo "Baselining: checking the production database matches prisma/schema.prisma..."
+            MIGRATIONS=(prisma/migrations/*/)
+            [ "${#MIGRATIONS[@]}" -eq 1 ] && [ -d prisma/migrations/0_init ] \
+              || abort "Baseline is only allowed while 0_init is the only migration"
+            DB_URL="$(node -e 'require("dotenv").config(); process.stdout.write(process.env.DIRECT_URL || process.env.DATABASE_URL || "")')"
+            [ -n "$DB_URL" ] || abort "DIRECT_URL / DATABASE_URL not set in .env"
+            set +e
+            DRIFT="$(npx prisma migrate diff --from-url "$DB_URL" --to-schema-datamodel prisma/schema.prisma --script --exit-code 2>&1)"
+            DIFF_EXIT=$?
+            set -e
+            if [ "$DIFF_EXIT" -ne 0 ]; then
+              echo "$DRIFT"
+              abort "Production database does not match the schema (see SQL above), so it was not baselined"
+            fi
+            echo "Database matches the schema. Marking 0_init as applied (no SQL is run)..."
+            npx prisma migrate resolve --applied 0_init || abort "prisma migrate resolve failed"
+          fi
 
           echo "Applying Prisma migrations..."
           npx prisma migrate deploy || abort "prisma migrate deploy failed"

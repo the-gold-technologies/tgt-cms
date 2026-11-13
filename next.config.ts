@@ -2,6 +2,10 @@ import type { NextConfig } from "next";
 
 // The website reads this CMS server-to-server only, so the API sends no CORS headers.
 const nextConfig: NextConfig = {
+  // Pin the project root to this folder. On the VPS the deploy builds in a staging folder
+  // inside the live app folder, and Next.js would otherwise pick the parent's lockfile.
+  turbopack: { root: __dirname },
+  outputFileTracingRoot: __dirname,
   serverExternalPackages: ["nodemailer"],
   // sharp's native binary links to libvips at runtime, but the build trace misses that
   // shared library, so on Vercel `import sharp` crashes the route. Ship it explicitly.
