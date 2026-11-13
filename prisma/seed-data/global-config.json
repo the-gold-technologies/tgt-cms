@@ -3,7 +3,7 @@
     "id": "global",
     "siteTitle": "TGT - Smart Digital Solutions & Web Development Services",
     "siteDescription": "TGT provides modern web development, digital solutions, and innovative technology services to help businesses grow online with high-performance and user-friendly experiences.",
-    "favicon": null,
+    "favicon": "https://res.cloudinary.com/dpa93copz/image/upload/v1794467539/tgt/logo-1794467539571.webp",
     "googleAnalyticsId": "G-CT894VPLS1",
     "gtmId": "GTM-59DCSVDV",
     "searchConsoleId": "4kD9H2fqRgqKEk",
@@ -11,62 +11,59 @@
     "customFooterScripts": "",
     "socialLinks": [
       {
-        "platform": "linkedin",
-        "url": "https://www.linkedin.com/company/the-gold-technologies/about/"
+        "url": "https://www.linkedin.com/company/the-gold-technologies/about/",
+        "platform": "linkedin"
       },
       {
-        "platform": "instagram",
-        "url": "https://www.instagram.com/thegoldtechnologies/"
+        "url": "https://www.instagram.com/thegoldtechnologies/",
+        "platform": "instagram"
       },
       {
-        "platform": "facebook",
-        "url": "https://www.facebook.com/thegoldtechnologies"
+        "url": "https://www.facebook.com/thegoldtechnologies",
+        "platform": "facebook"
       },
       {
-        "platform": "twitter",
-        "url": "https://x.com/TheGoldTech_"
+        "url": "https://x.com/TheGoldTech_",
+        "platform": "twitter"
       }
     ],
-    "canonicalOrdering": "default",
-    "sitemapEnabled": true,
-    "sitemapCustomContent": null,
-    "robotsTxt": null,
-    "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"The Gold Technologies\",\n  \"url\": \"https://thegoldtechnologies.com\",\n  \"logo\": \"https://thegoldtechnologies.com/logo.png\",\n  \"sameAs\": [\n    \"https://www.facebook.com/thegoldtechnologies\",\n    \"https://twitter.com/thegoldtech\",\n    \"https://www.linkedin.com/company/thegoldtechnologies\"\n  ]\n}",
-    "createdAt": "2026-03-18T08:22:00.640Z",
-    "updatedAt": "2026-07-09T09:24:20.330Z",
     "footer": {
       "logo": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/logo-1794375986657.webp",
-      "logoAlt": "The Gold Technologies logo",
-      "companyName": "THE GOLD TECHNOLOGIES",
-      "tagline": "Operating Worldwide",
-      "description": "Empowering visionaries with cutting-edge digital solutions. We turn complex challenges into elegant, scalable technology.",
       "email": "info@thegoldtechnologies.com",
       "phone": "+91 8368198551",
-      "offices": [
-        {
-          "country": "INDIA",
-          "address": "HQ · Noida\nSector 63, Noida, Uttar Pradesh"
-        },
-        {
-          "country": "UAE",
-          "address": "Veron LLC, Meydan Grandstand - 3rd Floor, Al Meydan Rd - Nad Al Sheba - Nadd Al Shiba First - Dubai - United Arab Emirates"
-        }
-      ],
       "badges": [
         {
-          "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/women-owned-logo-1794375987372.webp",
           "alt": "Women Owned business",
-          "link": ""
+          "link": "",
+          "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/women-owned-logo-1794375987372.webp"
+        },
+        {
+          "alt": "DMCA.com Protection Status",
+          "link": "https://www.dmca.com/Protection/Status.aspx?ID=174176c9-e0fd-4010-b0f5-50e6ed21d715",
+          "image": "https://images.dmca.com/Badges/dmca_protected_sml_120c.png?ID=174176c9-e0fd-4010-b0f5-50e6ed21d715"
         }
       ],
+      "logoAlt": "The Gold Technologies logo",
+      "offices": [
+        {
+          "address": "HQ · Noida\nSector 63, Noida, Uttar Pradesh",
+          "country": "INDIA"
+        },
+        {
+          "address": "Veron LLC, Meydan Grandstand - 3rd Floor, Al Meydan Rd - Nad Al Sheba - Nadd Al Shiba First - Dubai - United Arab Emirates",
+          "country": "UAE"
+        }
+      ],
+      "tagline": "Operating Worldwide",
       "wordmark": {
         "left": "The",
-        "center": "GOLD TECH",
-        "right": "NOLOGIES"
-      }
+        "right": "NOLOGIES",
+        "center": "GOLD TECH"
+      },
+      "companyName": "THE GOLD TECHNOLOGIES",
+      "description": "Empowering visionaries with cutting-edge digital solutions. We turn complex challenges into elegant, scalable technology."
     },
     "siteImages": {
-      "homeBackground": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/bg-4-1794375987031.webp",
       "techLogos": [
         {
           "name": "react",
@@ -387,326 +384,335 @@
           ]
         },
         {
+          "icon": "compass",
           "name": "brand strategy",
           "image": "",
-          "icon": "compass",
           "matches": [
             "brand strategy"
           ]
         },
         {
+          "icon": "pen-tool",
           "name": "logo & visual identity",
           "image": "",
-          "icon": "pen-tool",
           "matches": [
             "logo & visual identity"
           ]
         },
         {
+          "icon": "user-round",
           "name": "personal branding",
           "image": "",
-          "icon": "user-round",
           "matches": [
             "personal branding"
           ]
         },
         {
+          "icon": "building-2",
           "name": "company branding",
           "image": "",
-          "icon": "building-2",
           "matches": [
             "company branding"
           ]
         },
         {
+          "icon": "message-square-quote",
           "name": "brand voice",
           "image": "",
-          "icon": "message-square-quote",
           "matches": [
             "brand voice"
           ]
         },
         {
+          "icon": "images",
           "name": "social creatives",
           "image": "",
-          "icon": "images",
           "matches": [
             "social creatives"
           ]
         },
         {
+          "icon": "layout-template",
           "name": "wireframing",
           "image": "",
-          "icon": "layout-template",
           "matches": [
             "wireframing"
           ]
         },
         {
+          "icon": "mouse-pointer-click",
           "name": "prototyping",
           "image": "",
-          "icon": "mouse-pointer-click",
           "matches": [
             "prototyping"
           ]
         },
         {
+          "icon": "monitor",
           "name": "website ui",
           "image": "",
-          "icon": "monitor",
           "matches": [
             "website ui"
           ]
         },
         {
+          "icon": "smartphone",
           "name": "app ui",
           "image": "",
-          "icon": "smartphone",
           "matches": [
             "app ui"
           ]
         },
         {
+          "icon": "app-window",
           "name": "software ui",
           "image": "",
-          "icon": "app-window",
           "matches": [
             "software ui"
           ]
         },
         {
+          "icon": "accessibility",
           "name": "accessibility design",
           "image": "",
-          "icon": "accessibility",
           "matches": [
             "accessibility design"
           ]
         },
         {
+          "icon": "layers",
           "name": "cross-platform",
           "image": "",
-          "icon": "layers",
           "matches": [
             "cross-platform"
           ]
         },
         {
+          "icon": "bug",
           "name": "app testing & qa",
           "image": "",
-          "icon": "bug",
           "matches": [
             "app testing & qa"
           ]
         },
         {
+          "icon": "boxes",
           "name": "erp",
           "image": "",
-          "icon": "boxes",
           "matches": [
             "erp"
           ]
         },
         {
+          "icon": "users",
           "name": "crm",
           "image": "",
-          "icon": "users",
           "matches": [
             "crm"
           ]
         },
         {
+          "icon": "package",
           "name": "inventory management",
           "image": "",
-          "icon": "package",
           "matches": [
             "inventory management"
           ]
         },
         {
+          "icon": "wallet",
           "name": "hr & payroll",
           "image": "",
-          "icon": "wallet",
           "matches": [
             "hr & payroll"
           ]
         },
         {
+          "icon": "workflow",
           "name": "workflow automation",
           "image": "",
-          "icon": "workflow",
           "matches": [
             "workflow automation"
           ]
         },
         {
+          "icon": "file-text",
           "name": "document management",
           "image": "",
-          "icon": "file-text",
           "matches": [
             "document management"
           ]
         },
         {
+          "icon": "search",
           "name": "seo",
           "image": "",
-          "icon": "search",
           "matches": [
             "seo"
           ]
         },
         {
+          "icon": "sparkles",
           "name": "aeo, aio & geo",
           "image": "",
-          "icon": "sparkles",
           "matches": [
             "aeo, aio & geo"
           ]
         },
         {
+          "icon": "code-xml",
           "name": "technical seo",
           "image": "",
-          "icon": "code-xml",
           "matches": [
             "technical seo"
           ]
         },
         {
+          "icon": "pen-line",
           "name": "content marketing",
           "image": "",
-          "icon": "pen-line",
           "matches": [
             "content marketing"
           ]
         },
         {
+          "icon": "mail",
           "name": "email automation",
           "image": "",
-          "icon": "mail",
           "matches": [
             "email automation"
           ]
         },
         {
+          "icon": "mail-check",
           "name": "klaviyo",
           "image": "",
-          "icon": "mail-check",
           "matches": [
             "klaviyo"
           ]
         },
         {
+          "icon": "mic",
           "name": "podcast management",
           "image": "",
-          "icon": "mic",
           "matches": [
             "podcast management"
           ]
         },
         {
+          "icon": "share-2",
           "name": "social media management",
           "image": "",
-          "icon": "share-2",
           "matches": [
             "social media management"
           ]
         },
         {
+          "icon": "trending-up",
           "name": "performance marketing",
           "image": "",
-          "icon": "trending-up",
           "matches": [
             "performance marketing"
           ]
         },
         {
+          "icon": "megaphone",
           "name": "influencer marketing",
           "image": "",
-          "icon": "megaphone",
           "matches": [
             "influencer marketing"
           ]
         },
         {
+          "icon": "video",
           "name": "video marketing",
           "image": "",
-          "icon": "video",
           "matches": [
             "video marketing"
           ]
         },
         {
+          "icon": "repeat",
           "name": "retargeting",
           "image": "",
-          "icon": "repeat",
           "matches": [
             "retargeting"
           ]
         },
         {
+          "icon": "brain",
           "name": "ai & machine learning",
           "image": "",
-          "icon": "brain",
           "matches": [
             "ai & machine learning"
           ]
         },
         {
+          "icon": "bot",
           "name": "ai chatbots",
           "image": "",
-          "icon": "bot",
           "matches": [
             "ai chatbots"
           ]
         },
         {
+          "icon": "lightbulb",
           "name": "recommendations",
           "image": "",
-          "icon": "lightbulb",
           "matches": [
             "recommendations"
           ]
         },
         {
+          "icon": "chart-column",
           "name": "power bi",
           "image": "",
-          "icon": "chart-column",
           "matches": [
             "power bi"
           ]
         },
         {
+          "icon": "database",
           "name": "data warehousing",
           "image": "",
-          "icon": "database",
           "matches": [
             "data warehousing"
           ]
         },
         {
+          "icon": "cable",
           "name": "data engineering",
           "image": "",
-          "icon": "cable",
           "matches": [
             "data engineering"
           ]
         },
         {
+          "icon": "chart-pie",
           "name": "data visualisation",
           "image": "",
-          "icon": "chart-pie",
           "matches": [
             "data visualisation"
           ]
         },
         {
+          "icon": "chart-line",
           "name": "advanced analytics",
           "image": "",
-          "icon": "chart-line",
           "matches": [
             "advanced analytics"
           ]
         }
-      ]
-    }
+      ],
+      "homeBackground": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/bg-4-1794375987031.webp"
+    },
+    "canonicalOrdering": "default",
+    "sitemapEnabled": true,
+    "sitemapCustomContent": null,
+    "robotsTxt": "This is a dummy text file.\n\nYou can use this file for testing uploads, downloads, or text editor functionality.\n\nSample text:\nLorem ipsum dolor sit amet, consectetur adipiscing elit.\nThis is placeholder content and does not contain any real personal information.\n\nEnd of file.\n",
+    "schema": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Organization\",\n  \"name\": \"The Gold Technologies\",\n  \"url\": \"https://thegoldtechnologies.com\",\n  \"logo\": \"https://thegoldtechnologies.com/logo.png\",\n  \"sameAs\": [\n    \"https://www.facebook.com/thegoldtechnologies\",\n    \"https://twitter.com/thegoldtech\",\n    \"https://www.linkedin.com/company/thegoldtechnologies\"\n  ]\n}",
+    "headingOptions": "h1",
+    "createdAt": "2026-03-18T08:22:00.640Z",
+    "updatedAt": "2026-11-12T09:33:00.171Z"
   }
 ]
