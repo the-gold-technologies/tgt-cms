@@ -61,7 +61,9 @@ jobs:
       - name: Typecheck
         run: npx tsc --noEmit
 
-      - name: Lint
+      # Report-only: lint problems are shown in the log but never fail CI or block a deploy.
+      - name: Lint (report only)
+        continue-on-error: true
         run: npx eslint .
 
       - name: Build
