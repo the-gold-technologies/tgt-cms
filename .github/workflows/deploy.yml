@@ -1,0 +1,164 @@
+name: Deploy TGT CMS
+
+# Safe deploy to the VPS: a failed install, build or migration never takes the live CMS down.
+#
+# 1. CI (lint, typecheck, build, migration check) runs on GitHub first. If it fails, nothing
+#    is uploaded to the server.
+# 2. On the server, the new code is installed and built in a staging folder
+#    ($VPS_APP_DIR/.deploy/build) while the live CMS keeps running untouched.
+#    If anything fails there, the staging folder is discarded and the live CMS is unchanged.
+# 3. Only after a successful build: migrations run, the new files are swapped in (fast renames,
+#    the old files are kept in .deploy/previous), and PM2 restarts.
+# 4. If /api/health does not respond after the restart, the old files are put back and PM2
+#    restarts on them.
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: tgt-cms-production
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  ci:
+    name: CI
+    uses: ./.github/workflows/ci.yml
+
+  deploy:
+    name: Deploy to VPS
+    needs: ci
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    env:
+      VPS_HOST: ${{ secrets.VPS_HOST }}
+      VPS_USER: ${{ secrets.VPS_USER }}
+      VPS_PORT: ${{ secrets.VPS_PORT }}
+      VPS_APP_DIR: /var/www/newtgt/cms
+      PM2_APP: tgt-cms
+      # The address the CMS listens on inside the VPS (set the repository variable
+      # CMS_HEALTH_URL to override, e.g. http://127.0.0.1:3001/api/health).
+      HEALTH_URL: ${{ vars.CMS_HEALTH_URL || 'http://127.0.0.1:3001/api/health' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.VPS_SSH_KEY }}
+
+      - name: Add VPS to known hosts
+        env:
+          # Optional: the output of `ssh-keyscan -p <port> <host>`, saved once as a secret.
+          # Pins the server's key; without it the key is fetched on every run.
+          VPS_KNOWN_HOSTS: ${{ secrets.VPS_KNOWN_HOSTS }}
+        run: |
+          mkdir -p ~/.ssh
+          if [ -n "$VPS_KNOWN_HOSTS" ]; then
+            printf '%s\n' "$VPS_KNOWN_HOSTS" >> ~/.ssh/known_hosts
+          else
+            ssh-keyscan -p "$VPS_PORT" "$VPS_HOST" >> ~/.ssh/known_hosts
+          fi
+
+      - name: Upload application files to the staging folder
+        run: |
+          ssh -p "$VPS_PORT" "$VPS_USER@$VPS_HOST" "mkdir -p '$VPS_APP_DIR/.deploy/build'"
+          rsync -az --delete \
+            -e "ssh -p $VPS_PORT" \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.env*' \
+            --exclude='node_modules/' \
+            --exclude='.next/' \
+            --exclude='*.log' \
+            --exclude='tsconfig.tsbuildinfo' \
+            ./ "$VPS_USER@$VPS_HOST:$VPS_APP_DIR/.deploy/build/"
+
+      - name: Install, build, migrate, swap and restart (rolls back on failure)
+        run: |
+          ssh -p "$VPS_PORT" "$VPS_USER@$VPS_HOST" bash -s -- \
+            "$VPS_APP_DIR" "$PM2_APP" "$HEALTH_URL" <<'EOF'
+          set -euo pipefail
+          shopt -s dotglob nullglob
+          APP_DIR="$1"; PM2_APP="$2"; HEALTH_URL="$3"
+          BUILD="$APP_DIR/.deploy/build"
+          PREV="$APP_DIR/.deploy/previous"
+          MANIFEST="$APP_DIR/.deploy/swapped.txt"
+
+          # Until the swap, a failure only discards the staging folder. The live CMS is untouched.
+          abort() {
+            echo "::error::$1 - the live CMS was NOT changed and is still running."
+            rm -rf "$BUILD"
+            exit 1
+          }
+
+          [ -f "$APP_DIR/.env" ] || abort "$APP_DIR/.env not found"
+
+          cd "$BUILD"
+          cp "$APP_DIR/.env" .env
+
+          echo "Installing dependencies..."
+          npm ci --no-audit --no-fund || abort "npm ci failed"
+
+          echo "Building Next.js application..."
+          npm run build || abort "Build failed"
+
+          echo "Applying Prisma migrations..."
+          npx prisma migrate deploy || abort "prisma migrate deploy failed"
+
+          # ---- Swap: move each new top-level entry into place, keeping the old one in PREV ----
+          echo "Swapping in the new build..."
+          rm -rf "$PREV"; mkdir -p "$PREV"; : > "$MANIFEST"
+          for src in "$BUILD"/*; do
+            name="$(basename "$src")"
+            [ "$name" = ".env" ] && continue
+            if [ -e "$APP_DIR/$name" ]; then mv "$APP_DIR/$name" "$PREV/$name"; fi
+            mv "$src" "$APP_DIR/$name"
+            echo "$name" >> "$MANIFEST"
+          done
+
+          rollback() {
+            while read -r name; do
+              rm -rf "${APP_DIR:?}/$name"
+              if [ -e "$PREV/$name" ]; then mv "$PREV/$name" "$APP_DIR/$name"; fi
+            done < "$MANIFEST"
+          }
+
+          healthy() {
+            for i in $(seq 1 30); do
+              curl -fsS --max-time 5 "$HEALTH_URL" >/dev/null && return 0
+              sleep 2
+            done
+            return 1
+          }
+
+          echo "Restarting PM2 application..."
+          pm2 restart "$PM2_APP" --update-env
+
+          echo "Health check: $HEALTH_URL"
+          if ! healthy; then
+            echo "::error::New version failed the health check. Rolling back to the previous version."
+            pm2 logs "$PM2_APP" --lines 80 --nostream || true
+            rollback
+            pm2 restart "$PM2_APP" --update-env
+            if healthy; then
+              echo "Rolled back. The previous version is serving again."
+            else
+              echo "::error::The previous version is also unhealthy - check the server now (pm2 logs $PM2_APP)."
+            fi
+            rm -rf "$BUILD"
+            exit 1
+          fi
+
+          pm2 save
+          rm -rf "$BUILD"
+          echo "Deployment completed successfully."
+          EOF
