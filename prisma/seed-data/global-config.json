@@ -68,640 +68,462 @@
         {
           "name": "react",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375977/tgt/react-1794375976833.svg",
-          "matches": [
-            "react js",
-            "react native",
-            "react"
-          ]
+          "matches": ["react js", "react native", "react"]
         },
         {
           "name": "nextdotjs",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375973/tgt/nextdotjs-1794375973503.svg",
-          "matches": [
-            "next.js"
-          ]
+          "matches": ["next.js"]
         },
         {
           "name": "vuedotjs",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375982/tgt/vuedotjs-1794375981832.svg",
-          "matches": [
-            "vue js",
-            "vue"
-          ]
+          "matches": ["vue js", "vue"]
         },
         {
           "name": "nodedotjs",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375975/tgt/nodedotjs-1794375975060.svg",
-          "matches": [
-            "node & express",
-            "node.js"
-          ]
+          "matches": ["node & express", "node.js"]
         },
         {
           "name": "nestjs",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375973/tgt/nestjs-1794375973496.svg",
-          "matches": [
-            "nest js"
-          ]
+          "matches": ["nest js"]
         },
         {
           "name": "laravel",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375971/tgt/laravel-1794375971110.svg",
-          "matches": [
-            "laravel"
-          ]
+          "matches": ["laravel"]
         },
         {
           "name": "django",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375964/tgt/django-1794375964303.svg",
-          "matches": [
-            "django"
-          ]
+          "matches": ["django"]
         },
         {
           "name": "wordpress",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375982/tgt/wordpress-1794375982611.svg",
-          "matches": [
-            "wordpress"
-          ]
+          "matches": ["wordpress"]
         },
         {
           "name": "shopify",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375979/tgt/shopify-1794375979156.svg",
-          "matches": [
-            "shopify",
-            "shopify plus"
-          ]
+          "matches": ["shopify", "shopify plus"]
         },
         {
           "name": "flutter",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375968/tgt/flutter-1794375967966.svg",
-          "matches": [
-            "flutter"
-          ]
+          "matches": ["flutter"]
         },
         {
           "name": "swift",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375979/tgt/swift-1794375979392.svg",
-          "matches": [
-            "ios (swift)",
-            "swift"
-          ]
+          "matches": ["ios (swift)", "swift"]
         },
         {
           "name": "android",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375962/tgt/android-1794375961673.svg",
-          "matches": [
-            "android (java, kotlin)"
-          ]
+          "matches": ["android (java, kotlin)"]
         },
         {
           "name": "mongodb",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375973/tgt/mongodb-1794375973486.svg",
-          "matches": [
-            "mern stack"
-          ]
+          "matches": ["mern stack"]
         },
         {
           "name": "angular",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375962/tgt/angular-1794375962234.svg",
-          "matches": [
-            "mean stack"
-          ]
+          "matches": ["mean stack"]
         },
         {
           "name": "dotnet",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375966/tgt/dotnet-1794375965906.svg",
-          "matches": [
-            ".net"
-          ]
+          "matches": [".net"]
         },
         {
           "name": "openjdk",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375975/tgt/openjdk-1794375975473.svg",
-          "matches": [
-            "java"
-          ]
+          "matches": ["java"]
         },
         {
           "name": "python",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375977/tgt/python-1794375976830.svg",
-          "matches": [
-            "python"
-          ]
+          "matches": ["python"]
         },
         {
           "name": "flask",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375967/tgt/flask-1794375967056.svg",
-          "matches": [
-            "flask"
-          ]
+          "matches": ["flask"]
         },
         {
           "name": "ethereum",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375966/tgt/ethereum-1794375966255.svg",
-          "matches": [
-            "blockchain & web3"
-          ]
+          "matches": ["blockchain & web3"]
         },
         {
           "name": "sap",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375979/tgt/sap-1794375978648.svg",
-          "matches": [
-            "sap"
-          ]
+          "matches": ["sap"]
         },
         {
           "name": "googleanalytics",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375968/tgt/googleanalytics-1794375968028.svg",
-          "matches": [
-            "analytics",
-            "analytics & cro"
-          ]
+          "matches": ["analytics", "analytics & cro"]
         },
         {
           "name": "googleads",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375968/tgt/googleads-1794375967985.svg",
-          "matches": [
-            "google ads"
-          ]
+          "matches": ["google ads"]
         },
         {
           "name": "meta",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375973/tgt/meta-1794375973408.svg",
-          "matches": [
-            "meta ads"
-          ]
+          "matches": ["meta ads"]
         },
         {
           "name": "openai",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375975/tgt/openai-1794375975115.svg",
-          "matches": [
-            "generative ai",
-            "openai api"
-          ]
+          "matches": ["generative ai", "openai api"]
         },
         {
           "name": "tableau",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375980/tgt/tableau-1794375980283.svg",
-          "matches": [
-            "tableau"
-          ]
+          "matches": ["tableau"]
         },
         {
           "name": "amazonwebservices",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375962/tgt/amazonwebservices-1794375961644.svg",
-          "matches": [
-            "aws",
-            "aws / cloud"
-          ]
+          "matches": ["aws", "aws / cloud"]
         },
         {
           "name": "figma",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375966/tgt/figma-1794375966390.svg",
-          "matches": [
-            "figma"
-          ]
+          "matches": ["figma"]
         },
         {
           "name": "woocommerce",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375982/tgt/woocommerce-1794375982577.svg",
-          "matches": [
-            "woocommerce"
-          ]
+          "matches": ["woocommerce"]
         },
         {
           "name": "kotlin",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375970/tgt/kotlin-1794375969833.svg",
-          "matches": [
-            "kotlin"
-          ]
+          "matches": ["kotlin"]
         },
         {
           "name": "docker",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375964/tgt/docker-1794375964425.svg",
-          "matches": [
-            "docker"
-          ]
+          "matches": ["docker"]
         },
         {
           "name": "kubernetes",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375971/tgt/kubernetes-1794375971100.svg",
-          "matches": [
-            "kubernetes"
-          ]
+          "matches": ["kubernetes"]
         },
         {
           "name": "postgresql",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375976/tgt/postgresql-1794375975974.svg",
-          "matches": [
-            "postgresql"
-          ]
+          "matches": ["postgresql"]
         },
         {
           "name": "stripe",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375979/tgt/stripe-1794375979254.svg",
-          "matches": [
-            "stripe"
-          ]
+          "matches": ["stripe"]
         },
         {
           "name": "tailwindcss",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375981/tgt/tailwindcss-1794375981169.svg",
-          "matches": [
-            "tailwind css"
-          ]
+          "matches": ["tailwind css"]
         },
         {
           "name": "graphql",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375969/tgt/graphql-1794375969632.svg",
-          "matches": [
-            "graphql"
-          ]
+          "matches": ["graphql"]
         },
         {
           "name": "sanity",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375977/tgt/sanity-1794375977539.svg",
-          "matches": [
-            "sanity"
-          ]
+          "matches": ["sanity"]
         },
         {
           "name": "linkedin",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375972/tgt/linkedin-1794375971787.svg",
-          "matches": [
-            "linkedin"
-          ]
+          "matches": ["linkedin"]
         },
         {
           "name": "instagram",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375970/tgt/instagram-1794375969766.svg",
-          "matches": [
-            "instagram"
-          ]
+          "matches": ["instagram"]
         },
         {
           "name": "xcode",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375983/tgt/xcode-1794375982887.svg",
-          "matches": [
-            "xcode"
-          ]
+          "matches": ["xcode"]
         },
         {
           "name": "androidstudio",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375962/tgt/androidstudio-1794375962172.svg",
-          "matches": [
-            "android studio"
-          ]
+          "matches": ["android studio"]
         },
         {
           "name": "googleplay",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375969/tgt/googleplay-1794375969582.svg",
-          "matches": [
-            "google play",
-            "play store"
-          ]
+          "matches": ["google play", "play store"]
         },
         {
           "name": "appstore",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375964/tgt/appstore-1794375964301.svg",
-          "matches": [
-            "app store connect"
-          ]
+          "matches": ["app store connect"]
         },
         {
           "name": "apple",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375964/tgt/apple-1794375964296.svg",
-          "matches": [
-            "apple ui"
-          ]
+          "matches": ["apple ui"]
         },
         {
           "name": "materialdesign",
           "image": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375972/tgt/materialdesign-1794375971790.svg",
-          "matches": [
-            "material design"
-          ]
+          "matches": ["material design"]
         },
         {
           "icon": "compass",
           "name": "brand strategy",
           "image": "",
-          "matches": [
-            "brand strategy"
-          ]
+          "matches": ["brand strategy"]
         },
         {
           "icon": "pen-tool",
           "name": "logo & visual identity",
           "image": "",
-          "matches": [
-            "logo & visual identity"
-          ]
+          "matches": ["logo & visual identity"]
         },
         {
           "icon": "user-round",
           "name": "personal branding",
           "image": "",
-          "matches": [
-            "personal branding"
-          ]
+          "matches": ["personal branding"]
         },
         {
           "icon": "building-2",
           "name": "company branding",
           "image": "",
-          "matches": [
-            "company branding"
-          ]
+          "matches": ["company branding"]
         },
         {
           "icon": "message-square-quote",
           "name": "brand voice",
           "image": "",
-          "matches": [
-            "brand voice"
-          ]
+          "matches": ["brand voice"]
         },
         {
           "icon": "images",
           "name": "social creatives",
           "image": "",
-          "matches": [
-            "social creatives"
-          ]
+          "matches": ["social creatives"]
         },
         {
           "icon": "layout-template",
           "name": "wireframing",
           "image": "",
-          "matches": [
-            "wireframing"
-          ]
+          "matches": ["wireframing"]
         },
         {
           "icon": "mouse-pointer-click",
           "name": "prototyping",
           "image": "",
-          "matches": [
-            "prototyping"
-          ]
+          "matches": ["prototyping"]
         },
         {
           "icon": "monitor",
           "name": "website ui",
           "image": "",
-          "matches": [
-            "website ui"
-          ]
+          "matches": ["website ui"]
         },
         {
           "icon": "smartphone",
           "name": "app ui",
           "image": "",
-          "matches": [
-            "app ui"
-          ]
+          "matches": ["app ui"]
         },
         {
           "icon": "app-window",
           "name": "software ui",
           "image": "",
-          "matches": [
-            "software ui"
-          ]
+          "matches": ["software ui"]
         },
         {
           "icon": "accessibility",
           "name": "accessibility design",
           "image": "",
-          "matches": [
-            "accessibility design"
-          ]
+          "matches": ["accessibility design"]
         },
         {
           "icon": "layers",
           "name": "cross-platform",
           "image": "",
-          "matches": [
-            "cross-platform"
-          ]
+          "matches": ["cross-platform"]
         },
         {
           "icon": "bug",
           "name": "app testing & qa",
           "image": "",
-          "matches": [
-            "app testing & qa"
-          ]
+          "matches": ["app testing & qa"]
         },
         {
           "icon": "boxes",
           "name": "erp",
           "image": "",
-          "matches": [
-            "erp"
-          ]
+          "matches": ["erp"]
         },
         {
           "icon": "users",
           "name": "crm",
           "image": "",
-          "matches": [
-            "crm"
-          ]
+          "matches": ["crm"]
         },
         {
           "icon": "package",
           "name": "inventory management",
           "image": "",
-          "matches": [
-            "inventory management"
-          ]
+          "matches": ["inventory management"]
         },
         {
           "icon": "wallet",
           "name": "hr & payroll",
           "image": "",
-          "matches": [
-            "hr & payroll"
-          ]
+          "matches": ["hr & payroll"]
         },
         {
           "icon": "workflow",
           "name": "workflow automation",
           "image": "",
-          "matches": [
-            "workflow automation"
-          ]
+          "matches": ["workflow automation"]
         },
         {
           "icon": "file-text",
           "name": "document management",
           "image": "",
-          "matches": [
-            "document management"
-          ]
+          "matches": ["document management"]
         },
         {
           "icon": "search",
           "name": "seo",
           "image": "",
-          "matches": [
-            "seo"
-          ]
+          "matches": ["seo"]
         },
         {
           "icon": "sparkles",
           "name": "aeo, aio & geo",
           "image": "",
-          "matches": [
-            "aeo, aio & geo"
-          ]
+          "matches": ["aeo, aio & geo"]
         },
         {
           "icon": "code-xml",
           "name": "technical seo",
           "image": "",
-          "matches": [
-            "technical seo"
-          ]
+          "matches": ["technical seo"]
         },
         {
           "icon": "pen-line",
           "name": "content marketing",
           "image": "",
-          "matches": [
-            "content marketing"
-          ]
+          "matches": ["content marketing"]
         },
         {
           "icon": "mail",
           "name": "email automation",
           "image": "",
-          "matches": [
-            "email automation"
-          ]
+          "matches": ["email automation"]
         },
         {
           "icon": "mail-check",
           "name": "klaviyo",
           "image": "",
-          "matches": [
-            "klaviyo"
-          ]
+          "matches": ["klaviyo"]
         },
         {
           "icon": "mic",
           "name": "podcast management",
           "image": "",
-          "matches": [
-            "podcast management"
-          ]
+          "matches": ["podcast management"]
         },
         {
           "icon": "share-2",
           "name": "social media management",
           "image": "",
-          "matches": [
-            "social media management"
-          ]
+          "matches": ["social media management"]
         },
         {
           "icon": "trending-up",
           "name": "performance marketing",
           "image": "",
-          "matches": [
-            "performance marketing"
-          ]
+          "matches": ["performance marketing"]
         },
         {
           "icon": "megaphone",
           "name": "influencer marketing",
           "image": "",
-          "matches": [
-            "influencer marketing"
-          ]
+          "matches": ["influencer marketing"]
         },
         {
           "icon": "video",
           "name": "video marketing",
           "image": "",
-          "matches": [
-            "video marketing"
-          ]
+          "matches": ["video marketing"]
         },
         {
           "icon": "repeat",
           "name": "retargeting",
           "image": "",
-          "matches": [
-            "retargeting"
-          ]
+          "matches": ["retargeting"]
         },
         {
           "icon": "brain",
           "name": "ai & machine learning",
           "image": "",
-          "matches": [
-            "ai & machine learning"
-          ]
+          "matches": ["ai & machine learning"]
         },
         {
           "icon": "bot",
           "name": "ai chatbots",
           "image": "",
-          "matches": [
-            "ai chatbots"
-          ]
+          "matches": ["ai chatbots"]
         },
         {
           "icon": "lightbulb",
           "name": "recommendations",
           "image": "",
-          "matches": [
-            "recommendations"
-          ]
+          "matches": ["recommendations"]
         },
         {
           "icon": "chart-column",
           "name": "power bi",
           "image": "",
-          "matches": [
-            "power bi"
-          ]
+          "matches": ["power bi"]
         },
         {
           "icon": "database",
           "name": "data warehousing",
           "image": "",
-          "matches": [
-            "data warehousing"
-          ]
+          "matches": ["data warehousing"]
         },
         {
           "icon": "cable",
           "name": "data engineering",
           "image": "",
-          "matches": [
-            "data engineering"
-          ]
+          "matches": ["data engineering"]
         },
         {
           "icon": "chart-pie",
           "name": "data visualisation",
           "image": "",
-          "matches": [
-            "data visualisation"
-          ]
+          "matches": ["data visualisation"]
         },
         {
           "icon": "chart-line",
           "name": "advanced analytics",
           "image": "",
-          "matches": [
-            "advanced analytics"
-          ]
+          "matches": ["advanced analytics"]
         }
       ],
       "homeBackground": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375987/tgt/bg-4-1794375987031.webp"

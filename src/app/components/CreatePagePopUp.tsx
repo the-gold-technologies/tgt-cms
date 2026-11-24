@@ -95,9 +95,7 @@ export const CreatePagePopUp = ({
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-6 text-left">
                   <div className="flex flex-col gap-2">
-                    <label className="block text-sm font-semibold text-[#0B0F29]">
-                      Page Name*
-                    </label>
+                    <label className="block text-sm font-semibold text-[#0B0F29]">Page Name*</label>
                     <input
                       type="text"
                       required
@@ -111,10 +109,7 @@ export const CreatePagePopUp = ({
                   {/* Where the page's link appears on the website */}
                   <fieldset className="flex flex-col gap-2">
                     <legend className="mb-2 block text-sm font-semibold text-[#0B0F29]">
-                      Show link in{" "}
-                      <span className="font-normal text-gray-400">
-                        (optional)
-                      </span>
+                      Show link in <span className="font-normal text-gray-400">(optional)</span>
                     </legend>
                     <div className="grid grid-cols-3 gap-2">
                       {NAV_PLACEMENTS.map((option) => (
@@ -122,9 +117,7 @@ export const CreatePagePopUp = ({
                           type="button"
                           key={option.value}
                           onClick={() =>
-                            setPlacement((prev) =>
-                              prev === option.value ? "" : option.value,
-                            )
+                            setPlacement((prev) => (prev === option.value ? "" : option.value))
                           }
                           className={`cursor-pointer rounded-xl border px-3 py-3 text-center text-sm font-medium transition-colors ${
                             placement === option.value

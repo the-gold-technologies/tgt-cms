@@ -1,19 +1,10 @@
 "use client";
 
-import React, {
-  useState,
-  useEffect,
-  useCallback,
-  useRef,
-  useMemo,
-} from "react";
+import React, { useState, useEffect, useCallback, useRef, useMemo } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { PageHeader } from "@/components/PageHeader";
 import { useConfirmDelete } from "@/app/components/ConfirmDeleteModal";
-import {
-  saveCustomSection,
-  type SectionInstanceProps,
-} from "@/app/components/StaticSectionCard";
+import { saveCustomSection, type SectionInstanceProps } from "@/app/components/StaticSectionCard";
 import { uploadFiles } from "@/app/lib/uploadHelpers";
 import toast from "react-hot-toast";
 import {
@@ -306,37 +297,24 @@ function ControlledSectionWrapper<T>({
       setData(payload);
       toast.success(`${displayName} saved and published!`, { id: toastId });
     } catch (err) {
-      toast.error(
-        err instanceof Error ? err.message : "Failed to save section.",
-        { id: toastId },
-      );
+      toast.error(err instanceof Error ? err.message : "Failed to save section.", { id: toastId });
     } finally {
       setIsSaving(false);
     }
   };
 
-  return (
-    <>{children({ data, onChange: setData, isSaving, onSave: handleSave })}</>
-  );
+  return <>{children({ data, onChange: setData, isSaving, onSave: handleSave })}</>;
 }
 
-function CustomServiceStack({
-  sectionId = "",
-  initialData,
-  saveUrl,
-}: SectionInstanceProps) {
+function CustomServiceStack({ sectionId = "", initialData, saveUrl }: SectionInstanceProps) {
   const savedLogos =
     initialData?.logos && typeof initialData.logos === "object"
       ? (initialData.logos as Record<string, string>)
       : {};
   const [logos, setLogos] = useState<Record<string, string | File>>(savedLogos);
 
-  const stack = Array.isArray(initialData?.stack)
-    ? (initialData.stack as string[])
-    : [];
-  const related = Array.isArray(initialData?.related)
-    ? (initialData.related as string[])
-    : [];
+  const stack = Array.isArray(initialData?.stack) ? (initialData.stack as string[]) : [];
+  const related = Array.isArray(initialData?.related) ? (initialData.related as string[]) : [];
 
   return (
     <ControlledSectionWrapper
@@ -345,13 +323,9 @@ function CustomServiceStack({
       displayName="Service Stack"
       initialValue={{ stack, related }}
       prepareSave={async (val) => {
-        const cleanList = (list: string[]) =>
-          (list || []).map((v) => v.trim()).filter(Boolean);
+        const cleanList = (list: string[]) => (list || []).map((v) => v.trim()).filter(Boolean);
         const entries = Object.entries(logos);
-        const uploaded =
-          entries.length > 0
-            ? await uploadFiles(entries.map(([, v]) => v))
-            : [];
+        const uploaded = entries.length > 0 ? await uploadFiles(entries.map(([, v]) => v)) : [];
         const nextLogos: Record<string, string> = {};
         entries.forEach(([k], i) => {
           if (uploaded[i]) nextLogos[k] = uploaded[i] as string;
@@ -383,11 +357,7 @@ function CustomServiceStack({
   );
 }
 
-function CustomProductSuite({
-  sectionId = "",
-  initialData,
-  saveUrl,
-}: SectionInstanceProps) {
+function CustomProductSuite({ sectionId = "", initialData, saveUrl }: SectionInstanceProps) {
   const defaults = createDefaultProductsData();
   const grid = {
     ...defaults.grid,
@@ -459,12 +429,7 @@ function renderSection(section: SectionData) {
     case "Insights":
       return <Insights {...commonProps} />;
     case "GrowthCTA":
-      return (
-        <GrowthCTA
-          title='Global "Let&apos;s Talk" CTA (GrowthCTA)'
-          {...commonProps}
-        />
-      );
+      return <GrowthCTA title='Global "Let&apos;s Talk" CTA (GrowthCTA)' {...commonProps} />;
     case "StickyCTA":
       return <StickyCTA {...commonProps} />;
 
@@ -498,12 +463,7 @@ function renderSection(section: SectionData) {
           }}
         >
           {({ data: val, onChange, isSaving, onSave }) => (
-            <ServiceHero
-              data={val}
-              onChange={onChange}
-              isSaving={isSaving}
-              onSave={onSave}
-            />
+            <ServiceHero data={val} onChange={onChange} isSaving={isSaving} onSave={onSave} />
           )}
         </ControlledSectionWrapper>
       );
@@ -517,20 +477,13 @@ function renderSection(section: SectionData) {
           initialValue={{ ...defaults, ...(data as Partial<ServiceHeroData>) }}
         >
           {({ data: val, onChange, isSaving, onSave }) => (
-            <ServiceApproach
-              data={val}
-              onChange={onChange}
-              isSaving={isSaving}
-              onSave={onSave}
-            />
+            <ServiceApproach data={val} onChange={onChange} isSaving={isSaving} onSave={onSave} />
           )}
         </ControlledSectionWrapper>
       );
     }
     case "ServiceDeliver": {
-      const services = Array.isArray(data.services)
-        ? (data.services as DeliverItem[])
-        : [];
+      const services = Array.isArray(data.services) ? (data.services as DeliverItem[]) : [];
       return (
         <ControlledSectionWrapper<{ services: DeliverItem[] }>
           sectionId={section.id}
@@ -556,9 +509,7 @@ function renderSection(section: SectionData) {
       );
     }
     case "ServiceProof": {
-      const proof = Array.isArray(data.proof)
-        ? (data.proof as ProofCase[])
-        : [];
+      const proof = Array.isArray(data.proof) ? (data.proof as ProofCase[]) : [];
       const work = Array.isArray(data.work) ? (data.work as string[]) : [];
       return (
         <ControlledSectionWrapper<{ proof: ProofCase[]; work: string[] }>
@@ -568,9 +519,7 @@ function renderSection(section: SectionData) {
           prepareSave={(val) => ({
             proof: val.proof.map((item) => ({
               ...item,
-              metrics: (item.metrics || []).filter(
-                (m) => m.value.trim() || m.label.trim(),
-              ),
+              metrics: (item.metrics || []).filter((m) => m.value.trim() || m.label.trim()),
             })),
             work: (val.work || []).map((w) => w.trim()).filter(Boolean),
           })}
@@ -605,12 +554,7 @@ function renderSection(section: SectionData) {
           }}
         >
           {({ data: val, onChange, isSaving, onSave }) => (
-            <ProductHero
-              data={val}
-              onChange={onChange}
-              isSaving={isSaving}
-              onSave={onSave}
-            />
+            <ProductHero data={val} onChange={onChange} isSaving={isSaving} onSave={onSave} />
           )}
         </ControlledSectionWrapper>
       );
@@ -635,12 +579,7 @@ function renderSection(section: SectionData) {
           }}
         >
           {({ data: val, onChange, isSaving, onSave }) => (
-            <PortfolioHero
-              data={val}
-              onChange={onChange}
-              isSaving={isSaving}
-              onSave={onSave}
-            />
+            <PortfolioHero data={val} onChange={onChange} isSaving={isSaving} onSave={onSave} />
           )}
         </ControlledSectionWrapper>
       );
@@ -680,18 +619,11 @@ function renderSection(section: SectionData) {
           }}
           prepareSave={(val) => ({
             ...val,
-            stats: (val.stats || []).filter(
-              (s) => s.value.trim() || s.label.trim(),
-            ),
+            stats: (val.stats || []).filter((s) => s.value.trim() || s.label.trim()),
           })}
         >
           {({ data: val, onChange, isSaving, onSave }) => (
-            <PortfolioResults
-              data={val}
-              onChange={onChange}
-              isSaving={isSaving}
-              onSave={onSave}
-            />
+            <PortfolioResults data={val} onChange={onChange} isSaving={isSaving} onSave={onSave} />
           )}
         </ControlledSectionWrapper>
       );
@@ -736,12 +668,10 @@ function renderSection(section: SectionData) {
     default:
       return (
         <div className="flex flex-col items-center gap-2 rounded-[2.5rem] border border-red-100 bg-red-50 p-8 text-red-500">
-          <span className="text-lg font-bold">
-            Unknown Section Type: {section.type}
-          </span>
+          <span className="text-lg font-bold">Unknown Section Type: {section.type}</span>
           <p className="max-w-md text-center text-sm opacity-80">
-            The component for this section type has not yet been implemented or
-            is missing from the renderer.
+            The component for this section type has not yet been implemented or is missing from the
+            renderer.
           </p>
         </div>
       );
@@ -785,10 +715,7 @@ export function CustomPageEditor() {
 
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setIsDropdownOpen(false);
       }
     }
@@ -871,9 +798,7 @@ export function CustomPageEditor() {
       });
       const json = await res.json();
       if (json.success) {
-        toast.success(
-          `Added ${selectedOption?.label || selectedType} component`,
-        );
+        toast.success(`Added ${selectedOption?.label || selectedType} component`);
         setPageData({
           ...pageData,
           sections: [...pageData.sections, json.data],
@@ -893,8 +818,7 @@ export function CustomPageEditor() {
   const deleteSection = async (sectionId: string) => {
     const confirmed = await confirmDelete({
       title: "Delete this section?",
-      message:
-        "This section and all of its configured content will be removed from the page.",
+      message: "This section and all of its configured content will be removed from the page.",
     });
     if (!confirmed) return;
 
@@ -943,9 +867,7 @@ export function CustomPageEditor() {
                 <div className="absolute inset-0 rounded-full border-4 border-[#D4AF37]/20" />
                 <div className="absolute inset-0 animate-spin rounded-full border-4 border-t-[#D4AF37]" />
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <span className="font-serif text-2xl font-black text-[#0B0F29]">
-                    TGT
-                  </span>
+                  <span className="font-serif text-2xl font-black text-[#0B0F29]">TGT</span>
                 </div>
               </motion.div>
 
@@ -987,14 +909,10 @@ export function CustomPageEditor() {
               <div className="absolute inset-0 animate-pulse rounded-[2.5rem] bg-red-500/5" />
             </motion.div>
             <div className="max-w-sm space-y-3 text-center">
-              <h3 className="text-3xl font-bold tracking-tight text-[#0B0F29]">
-                Page Not Found
-              </h3>
+              <h3 className="text-3xl font-bold tracking-tight text-[#0B0F29]">Page Not Found</h3>
               <p className="leading-relaxed font-medium text-gray-500">
-                The page with slug{" "}
-                <span className="text-[#0B0F29]">&quot;{slug}&quot;</span> could
-                not be located. It may have been moved, deleted, or never
-                existed.
+                The page with slug <span className="text-[#0B0F29]">&quot;{slug}&quot;</span> could
+                not be located. It may have been moved, deleted, or never existed.
               </p>
             </div>
             <Link
@@ -1042,9 +960,7 @@ export function CustomPageEditor() {
                         </button>
                       </div>
 
-                      <div className="rounded-3xl transition-all">
-                        {renderSection(section)}
-                      </div>
+                      <div className="rounded-3xl transition-all">{renderSection(section)}</div>
                     </div>
                   </Reorder.Item>
                 ))}
@@ -1053,12 +969,10 @@ export function CustomPageEditor() {
               {/* Add Component Form Dropdown */}
               <div className="flex flex-col items-center gap-4 rounded-[3rem] border-2 border-dashed border-gray-200 bg-gray-50/50 px-6 py-10">
                 <div className="text-center">
-                  <h3 className="font-semibold text-gray-700">
-                    Add a component form to your page
-                  </h3>
+                  <h3 className="font-semibold text-gray-700">Add a component form to your page</h3>
                   <p className="mt-1 text-xs text-gray-400">
-                    Choose any website component form below — new sections start
-                    empty with no pre-filled data.
+                    Choose any website component form below — new sections start empty with no
+                    pre-filled data.
                   </p>
                 </div>
 
@@ -1189,8 +1103,7 @@ export function CustomPageEditor() {
                                   </div>
                                   <div className="space-y-0.5">
                                     {grp.items.map((item) => {
-                                      const isSelected =
-                                        selectedType === item.value;
+                                      const isSelected = selectedType === item.value;
                                       return (
                                         <button
                                           key={item.value}
@@ -1208,9 +1121,7 @@ export function CustomPageEditor() {
                                         >
                                           <span
                                             className={`font-medium ${
-                                              isSelected
-                                                ? "text-white"
-                                                : "text-gray-800"
+                                              isSelected ? "text-white" : "text-gray-800"
                                             }`}
                                           >
                                             {item.label}

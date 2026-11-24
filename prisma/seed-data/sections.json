@@ -24,10 +24,7 @@
       "headlineTop": "One team to",
       "ratingLabel": "Average client rating",
       "responseLine": "Reply within 24 hours",
-      "headlineWords": [
-        "brand,",
-        "build"
-      ],
+      "headlineWords": ["brand,", "build"],
       "headlinePrefix": "&",
       "headlineSuffix": "your business.",
       "primaryButtonUrl": "https://calendar.app.google/5nNHP69fUR5WEMvt9",
@@ -76,10 +73,7 @@
           "value": "7+"
         }
       ],
-      "highlights": [
-        "stay.",
-        "grow."
-      ]
+      "highlights": ["stay.", "grow."]
     },
     "order": 2,
     "createdAt": "2026-11-10T08:41:54.253Z",
@@ -103,20 +97,12 @@
             {
               "href": "/service/branding",
               "name": "Branding & Identity",
-              "items": [
-                "Strategy & positioning",
-                "Logo & visual identity",
-                "Brand voice"
-              ]
+              "items": ["Strategy & positioning", "Logo & visual identity", "Brand voice"]
             },
             {
               "href": "/service/ui-ux-designing",
               "name": "UI/UX Design",
-              "items": [
-                "Research",
-                "Prototypes",
-                "Interface & motion design"
-              ]
+              "items": ["Research", "Prototypes", "Interface & motion design"]
             }
           ],
           "description": "We shape how customers see, feel and remember you, from positioning and identity to interfaces people love using."
@@ -131,38 +117,22 @@
             {
               "href": "/service/website-design-development",
               "name": "Website Design & Development",
-              "items": [
-                "Web apps",
-                "E-commerce",
-                "CMS builds"
-              ]
+              "items": ["Web apps", "E-commerce", "CMS builds"]
             },
             {
               "href": "/service/mobile-app-development",
               "name": "Mobile App Development",
-              "items": [
-                "iOS & Android",
-                "Cross-platform",
-                "App Store launch"
-              ]
+              "items": ["iOS & Android", "Cross-platform", "App Store launch"]
             },
             {
               "href": "/service/custom-software-development",
               "name": "Custom Software Development",
-              "items": [
-                "SaaS",
-                "CRM & ERP",
-                "API integrations"
-              ]
+              "items": ["SaaS", "CRM & ERP", "API integrations"]
             },
             {
               "href": "/service/business-software-solutions",
               "name": "Business Software Solutions",
-              "items": [
-                "Workflow automation",
-                "Billing",
-                "HR & inventory"
-              ]
+              "items": ["Workflow automation", "Billing", "HR & inventory"]
             }
           ],
           "description": "Fast websites, mobile apps and custom software engineered to scale with your business, not hold it back."
@@ -177,20 +147,12 @@
             {
               "href": "/service/search-content-marketing",
               "name": "Search & Content Marketing",
-              "items": [
-                "SEO",
-                "Content strategy",
-                "Email automation"
-              ]
+              "items": ["SEO", "Content strategy", "Email automation"]
             },
             {
               "href": "/service/social-performance-marketing",
               "name": "Social & Performance Marketing",
-              "items": [
-                "Social media",
-                "Paid ads",
-                "Conversion optimisation"
-              ]
+              "items": ["Social media", "Paid ads", "Conversion optimisation"]
             }
           ],
           "description": "Data-driven marketing that puts you in front of the right people and turns attention into revenue."
@@ -205,28 +167,17 @@
             {
               "href": "/service/ai-ml-solutions",
               "name": "AI & ML Solutions",
-              "items": [
-                "Generative AI",
-                "Chatbots",
-                "Recommendations"
-              ]
+              "items": ["Generative AI", "Chatbots", "Recommendations"]
             },
             {
               "href": "/service/business-intelligence-solutions",
               "name": "Business Intelligence",
-              "items": [
-                "Dashboards",
-                "Predictive analytics"
-              ]
+              "items": ["Dashboards", "Predictive analytics"]
             },
             {
               "href": "/service/staff-augmentation",
               "name": "Staff Augmentation",
-              "items": [
-                "Dedicated developers",
-                "Designers",
-                "Flexible contracts"
-              ]
+              "items": ["Dedicated developers", "Designers", "Flexible contracts"]
             }
           ],
           "description": "Use AI, data and on-demand engineering talent to cut manual work, make sharper decisions and stay ahead of competitors."
@@ -359,13 +310,7 @@
           "timeZone": "Asia/Dubai"
         }
       ],
-      "budgets": [
-        "$5k to $10k",
-        "$10k to $25k",
-        "$25k to $50k",
-        "$50k+",
-        "Not sure yet"
-      ],
+      "budgets": ["$5k to $10k", "$10k to $25k", "$25k to $50k", "$50k+", "Not sure yet"],
       "formNote": "We reply within 24 hours with ideas, not a sales pitch.",
       "sentNote": "Thanks, your brief is in. We'll reply within 24 hours.",
       "callTitle": "Prefer to talk?",
@@ -381,11 +326,7 @@
         "Staff Augmentation",
         "Full growth partnership"
       ],
-      "assurances": [
-        "Free 30-minute strategy call",
-        "No obligation",
-        "Reply within 24 hours"
-      ],
+      "assurances": ["Free 30-minute strategy call", "No obligation", "Reply within 24 hours"],
       "clocksNote": "Wherever you are, we overlap with your workday.",
       "budgetLabel": "Project budget",
       "description": "Tell us where you want to grow. You'll get a reply within 24 hours with clear next steps, whether you work with us or not.",
@@ -1179,11 +1120,7 @@
     "pageId": "e9505f63-2630-43a5-803e-4b9df635fb8d",
     "type": "AboutHero",
     "content": {
-      "meta": [
-        "Since 2023",
-        "Noida · Dubai",
-        "10+ years of expertise"
-      ],
+      "meta": ["Since 2023", "Noida · Dubai", "10+ years of expertise"],
       "label": "(About us)",
       "imageUrl": "https://res.cloudinary.com/dpa93copz/image/upload/v1794375986/tgt/team-1794375986217.webp",
       "primaryUrl": "https://calendar.app.google/5nNHP69fUR5WEMvt9",
@@ -1223,11 +1160,7 @@
           "value": "7+"
         }
       ],
-      "highlights": [
-        "craft.",
-        "growth",
-        "business."
-      ]
+      "highlights": ["craft.", "growth", "business."]
     },
     "order": 1,
     "createdAt": "2026-11-10T09:44:12.713Z",
@@ -1600,10 +1533,7 @@
             "description": "Name: GreatWaterFilters.com.au\nWebsite URL: https://greatwaterfilters.com.au\nBusiness Type: Water filter business for whole houses"
           },
           {
-            "tags": [
-              "Leads",
-              "Showcase"
-            ],
+            "tags": ["Leads", "Showcase"],
             "title": "Challenges Faced",
             "number": "02",
             "outcome": "",
@@ -1611,10 +1541,7 @@
             "description": "Lead Generation: The client needed a website to generate new leads.\nProduct Showcase: Needed effective online display of water filter products."
           },
           {
-            "tags": [
-              "WordPress",
-              "Design"
-            ],
+            "tags": ["WordPress", "Design"],
             "title": "Service Proposal",
             "number": "03",
             "outcome": "",
@@ -1622,11 +1549,7 @@
             "description": "WordPress Website Development: Designed and developed a user-friendly and visually appealing website using the WordPress platform."
           },
           {
-            "tags": [
-              "Analytics",
-              "Inventory",
-              "CMS"
-            ],
+            "tags": ["Analytics", "Inventory", "CMS"],
             "title": "Scope of Work",
             "number": "04",
             "outcome": "",
@@ -1634,10 +1557,7 @@
             "description": "WordPress Development: Customized responsive site with high engagement.\nAnalytics Integration: Monitor performance and user behavior.\nProduct Management: System to showcase products effectively.\nInventory Management: Manage stock availability."
           },
           {
-            "tags": [
-              "Collaboration",
-              "Integration"
-            ],
+            "tags": ["Collaboration", "Integration"],
             "title": "How Work Was Carried Out",
             "number": "05",
             "outcome": "",
@@ -1645,10 +1565,7 @@
             "description": "Requirements Gathering: Close collaboration on details and target audience.\nDevelopment & Integration: Built with WordPress and integrated Analytics.\nManagement Setup: Product and Inventory tracking setup."
           },
           {
-            "tags": [
-              "SEO",
-              "Sales"
-            ],
+            "tags": ["SEO", "Sales"],
             "title": "Results/Benefits",
             "number": "06",
             "outcome": "Increased online presence",
@@ -2526,19 +2443,10 @@
         "Brand voice",
         "Social creatives"
       ],
-      "related": [
-        "ui-ux-designing",
-        "website-design-development",
-        "social-performance-marketing"
-      ],
+      "related": ["ui-ux-designing", "website-design-development", "social-performance-marketing"],
       "services": [
         {
-          "tags": [
-            "BRAND POSITIONING",
-            "MARKET RESEARCH",
-            "COMPETITOR ANALYSIS",
-            "CORE VALUES"
-          ],
+          "tags": ["BRAND POSITIONING", "MARKET RESEARCH", "COMPETITOR ANALYSIS", "CORE VALUES"],
           "title": "Brand Strategy & Positioning",
           "number": "01",
           "outcome": "A clear, distinctive brand identity that resonates deeply with audiences.",
@@ -2546,12 +2454,7 @@
           "description": "Developing a robust foundational strategy that defines your brand's core values, mission, target audience, and unique market positioning."
         },
         {
-          "tags": [
-            "LOGO DESIGN",
-            "BRAND GUIDELINES",
-            "TYPOGRAPHY",
-            "COLOR THEORY"
-          ],
+          "tags": ["LOGO DESIGN", "BRAND GUIDELINES", "TYPOGRAPHY", "COLOR THEORY"],
           "title": "Logo Design & Visual Identity",
           "number": "02",
           "outcome": "A stunning, instantly recognizable visual representation of your business.",
@@ -2559,12 +2462,7 @@
           "description": "Crafting memorable, timeless bespoke logos and comprehensive visual guidelines strictly detailing typography, color palettes, and imagery rules."
         },
         {
-          "tags": [
-            "BUSINESS CARDS",
-            "STATIONARY",
-            "PITCH DECKS",
-            "LETTERHEADS"
-          ],
+          "tags": ["BUSINESS CARDS", "STATIONARY", "PITCH DECKS", "LETTERHEADS"],
           "title": "Corporate Identity Collateral",
           "number": "03",
           "outcome": "Professional consistency across absolutely every corporate touchpoint.",
@@ -2572,12 +2470,7 @@
           "description": "Designing coherent brand collateral ranging from premium business cards and stationary to expansive digital presentation decks."
         },
         {
-          "tags": [
-            "TONE OF VOICE",
-            "COPYWRITING",
-            "MESSAGING FRAMEWORK",
-            "COMMUNICATION"
-          ],
+          "tags": ["TONE OF VOICE", "COPYWRITING", "MESSAGING FRAMEWORK", "COMMUNICATION"],
           "title": "Brand Voice & Messaging",
           "number": "04",
           "outcome": "A cohesive narrative that engages consumers and builds authoritative trust.",
@@ -2585,12 +2478,7 @@
           "description": "Defining a distinct, authentic brand voice and structuring compelling copywriting guidelines to ensure uniform communication globally."
         },
         {
-          "tags": [
-            "REBRANDING",
-            "BRAND AUDIT",
-            "MODERNIZATION",
-            "LEGACY"
-          ],
+          "tags": ["REBRANDING", "BRAND AUDIT", "MODERNIZATION", "LEGACY"],
           "title": "Rebranding & Modernization",
           "number": "05",
           "outcome": "A revitalized corporate image optimized exclusively for contemporary markets.",
@@ -2598,12 +2486,7 @@
           "description": "Breathing new life into outdated brands by carefully auditing current market sentiment and modernizing visuals while maintaining core legacy recognition."
         },
         {
-          "tags": [
-            "PACKAGING DESIGN",
-            "SPATIAL DESIGN",
-            "RETAIL GRAPHICS",
-            "PHYSICAL EXPERIENCE"
-          ],
+          "tags": ["PACKAGING DESIGN", "SPATIAL DESIGN", "RETAIL GRAPHICS", "PHYSICAL EXPERIENCE"],
           "title": "Packaging & Environmental Design",
           "number": "06",
           "outcome": "An immersive, tactile consumer experience extending beyond the screen.",
@@ -2666,13 +2549,7 @@
         "headingLine1": "Interfaces people",
         "headingLine2": "love using."
       },
-      "work": [
-        "Catfy",
-        "Office Book",
-        "IP ERP",
-        "Customer Book",
-        "Quick Commerce"
-      ],
+      "work": ["Catfy", "Office Book", "IP ERP", "Customer Book", "Quick Commerce"],
       "proof": [
         {
           "text": "Clean, task-focused interfaces for our own SaaS products: Catfy, Office Book, IP ERP and Customer Book.",
@@ -2688,19 +2565,10 @@
         "Software UI",
         "Accessibility design"
       ],
-      "related": [
-        "branding",
-        "website-design-development",
-        "mobile-app-development"
-      ],
+      "related": ["branding", "website-design-development", "mobile-app-development"],
       "services": [
         {
-          "tags": [
-            "USER INTERVIEWS",
-            "USABILITY TESTING",
-            "PERSONAS",
-            "JOURNEY MAPPING"
-          ],
+          "tags": ["USER INTERVIEWS", "USABILITY TESTING", "PERSONAS", "JOURNEY MAPPING"],
           "title": "User Research & Discovery",
           "number": "01",
           "outcome": "Actionable insights forming the foundation of a user-centric product strategy.",
@@ -2708,12 +2576,7 @@
           "description": "We dive deep into your users' behaviours, needs, and pain points through interviews, surveys, and usability testing to inform every design decision."
         },
         {
-          "tags": [
-            "SITE MAPS",
-            "USER FLOWS",
-            "CARD SORTING",
-            "CONTENT STRATEGY"
-          ],
+          "tags": ["SITE MAPS", "USER FLOWS", "CARD SORTING", "CONTENT STRATEGY"],
           "title": "Information Architecture",
           "number": "02",
           "outcome": "A clear and intuitive navigation structure that significantly enhances user engagement.",
@@ -2721,12 +2584,7 @@
           "description": "We organize, structure, and label content in an effective and sustainable way. The goal is to help users intuitively find information and naturally complete tasks."
         },
         {
-          "tags": [
-            "LOW-FIDELITY",
-            "HIGH-FIDELITY",
-            "INTERACTIVE PROTOTYPES",
-            "FIGMA"
-          ],
+          "tags": ["LOW-FIDELITY", "HIGH-FIDELITY", "INTERACTIVE PROTOTYPES", "FIGMA"],
           "title": "Wireframing & Prototyping",
           "number": "03",
           "outcome": "A validated visual blueprint of the product that aligns stakeholders and accelerates development.",
@@ -2734,12 +2592,7 @@
           "description": "From low-fidelity sketches to high-fidelity clickable prototypes, we map out every screen, flow, and transition before a single line of code is written."
         },
         {
-          "tags": [
-            "TYPOGRAPHY",
-            "COLOR THEORY",
-            "DESIGN SYSTEMS",
-            "ACCESSIBILITY"
-          ],
+          "tags": ["TYPOGRAPHY", "COLOR THEORY", "DESIGN SYSTEMS", "ACCESSIBILITY"],
           "title": "Visual & Interface Design",
           "number": "04",
           "outcome": "An engaging, beautiful, and consistent interface that delights users and builds brand trust.",
@@ -2747,12 +2600,7 @@
           "description": "We craft visually stunning interfaces that perfectly reflect your brand identity, while ensuring absolute accessibility, readability, and a premium look and feel."
         },
         {
-          "tags": [
-            "MICRO-INTERACTIONS",
-            "MOTION GRAPHICS",
-            "FEEDBACK LOOPS",
-            "TRANSITIONS"
-          ],
+          "tags": ["MICRO-INTERACTIONS", "MOTION GRAPHICS", "FEEDBACK LOOPS", "TRANSITIONS"],
           "title": "Interaction & Motion Design",
           "number": "05",
           "outcome": "An interface that feels alive, responsive, and intuitive, practically eliminating user frustration.",
@@ -2760,12 +2608,7 @@
           "description": "We design engaging micro-interactions and smooth transitional animations that subtly guide users, providing immediate, satisfying visual feedback for their actions."
         },
         {
-          "tags": [
-            "A/B TESTING",
-            "HEATMAPS",
-            "GUEST FEEDBACK",
-            "DESIGN REVISION"
-          ],
+          "tags": ["A/B TESTING", "HEATMAPS", "GUEST FEEDBACK", "DESIGN REVISION"],
           "title": "Usability Testing & Iteration",
           "number": "06",
           "outcome": "A fully optimized digital product backed completely by real qualitative behavioral data.",
@@ -2875,19 +2718,10 @@
         "WordPress",
         "Shopify"
       ],
-      "related": [
-        "ui-ux-designing",
-        "search-content-marketing",
-        "custom-software-development"
-      ],
+      "related": ["ui-ux-designing", "search-content-marketing", "custom-software-development"],
       "services": [
         {
-          "tags": [
-            "REACT",
-            "NEXT.JS",
-            "NODE.JS",
-            "SCALABILITY"
-          ],
+          "tags": ["REACT", "NEXT.JS", "NODE.JS", "SCALABILITY"],
           "title": "Custom Web Application Development",
           "number": "01",
           "outcome": "A proprietary web app that dramatically streamlines organizational workflows.",
@@ -2895,12 +2729,7 @@
           "description": "We build tailored, scalable, and secure web applications designed specifically to resolve complex business logic and accelerate daily operations."
         },
         {
-          "tags": [
-            "SINGLE PAGE APPS",
-            "VUE",
-            "TAILWIND CSS",
-            "OPTIMIZATION"
-          ],
+          "tags": ["SINGLE PAGE APPS", "VUE", "TAILWIND CSS", "OPTIMIZATION"],
           "title": "Frontend Engineering & SPAs",
           "number": "02",
           "outcome": "An instant-loading application interface drastically improving user retention.",
@@ -2908,12 +2737,7 @@
           "description": "Delivering blazing-fast, responsive Single Page Applications (SPAs) that offer native-like smoothness and engaging visual fidelity for end-users."
         },
         {
-          "tags": [
-            "SHOPIFY PLUS",
-            "WOOCOMMERCE",
-            "STRIPE",
-            "CONVERSION"
-          ],
+          "tags": ["SHOPIFY PLUS", "WOOCOMMERCE", "STRIPE", "CONVERSION"],
           "title": "E-Commerce Platforms",
           "number": "03",
           "outcome": "A high-converting digital storefront handling high traffic scaling.",
@@ -2921,12 +2745,7 @@
           "description": "End-to-end development of bespoke online storefronts, featuring secure payment gateways, inventory management, and intuitive cart behaviors."
         },
         {
-          "tags": [
-            "GRAPHQL",
-            "POSTGRESQL",
-            "REST APIS",
-            "MICROSERVICES"
-          ],
+          "tags": ["GRAPHQL", "POSTGRESQL", "REST APIS", "MICROSERVICES"],
           "title": "Backend & API Architecture",
           "number": "04",
           "outcome": "A reliable, high-availability data foundation for enterprise operations.",
@@ -2934,12 +2753,7 @@
           "description": "Constructing robust backend systems, RESTful and GraphQL APIs, and databases capable of seamlessly handling vast amounts of secure transactional data."
         },
         {
-          "tags": [
-            "HEADLESS CMS",
-            "WORDPRESS",
-            "SANITY",
-            "CONTENT STRATEGY"
-          ],
+          "tags": ["HEADLESS CMS", "WORDPRESS", "SANITY", "CONTENT STRATEGY"],
           "title": "CMS Integration & Migration",
           "number": "05",
           "outcome": "Total editorial control over your content without needing developer assistance.",
@@ -2947,12 +2761,7 @@
           "description": "Implementing powerful Content Management Systems (like WordPress, Sanity, or custom Headless solutions) empowering you to seamlessly update website content."
         },
         {
-          "tags": [
-            "SECURITY AUDITS",
-            "SLA SUPPORT",
-            "CLOUD METRICS",
-            "SSL"
-          ],
+          "tags": ["SECURITY AUDITS", "SLA SUPPORT", "CLOUD METRICS", "SSL"],
           "title": "Maintenance & Platform Security",
           "number": "06",
           "outcome": "Absolute peace of mind knowing the website is consistently secure and online.",
@@ -3015,11 +2824,7 @@
         "headingLine1": "Apps people",
         "headingLine2": "keep opening."
       },
-      "work": [
-        "Home Healthcare Services",
-        "Scan & Sign",
-        "Attendance & Loan App"
-      ],
+      "work": ["Home Healthcare Services", "Scan & Sign", "Attendance & Loan App"],
       "proof": [
         {
           "text": "Home healthcare services, Scan & Sign document signing, and an attendance and loan app for sales teams.",
@@ -3035,19 +2840,10 @@
         "Cross-platform",
         "App testing & QA"
       ],
-      "related": [
-        "ui-ux-designing",
-        "custom-software-development",
-        "website-design-development"
-      ],
+      "related": ["ui-ux-designing", "custom-software-development", "website-design-development"],
       "services": [
         {
-          "tags": [
-            "SWIFT",
-            "OBJECTIVE-C",
-            "XCODE",
-            "APPLE UI"
-          ],
+          "tags": ["SWIFT", "OBJECTIVE-C", "XCODE", "APPLE UI"],
           "title": "Native iOS Development",
           "number": "01",
           "outcome": "A premium application deeply integrated with Apple hardware and services.",
@@ -3055,12 +2851,7 @@
           "description": "Crafting flawless, high-performance native applications for iOS utilizing Swift, optimized specifically for the latest iPhone and iPad feature sets."
         },
         {
-          "tags": [
-            "KOTLIN",
-            "ANDROID STUDIO",
-            "MATERIAL DESIGN",
-            "PLAY STORE"
-          ],
+          "tags": ["KOTLIN", "ANDROID STUDIO", "MATERIAL DESIGN", "PLAY STORE"],
           "title": "Native Android Development",
           "number": "02",
           "outcome": "Vast market reach on the Android platform with flawless native performance.",
@@ -3068,12 +2859,7 @@
           "description": "Developing robust, scalable native Android applications utilizing Kotlin, ensuring compatibility and high fluidity across fragmentation in device screens."
         },
         {
-          "tags": [
-            "REACT NATIVE",
-            "FLUTTER",
-            "SINGLE CODEBASE",
-            "EFFICIENCY"
-          ],
+          "tags": ["REACT NATIVE", "FLUTTER", "SINGLE CODEBASE", "EFFICIENCY"],
           "title": "Cross-Platform Frameworks",
           "number": "03",
           "outcome": "Reduced development timeline and simplified maintenance without sacrificing quality.",
@@ -3081,12 +2867,7 @@
           "description": "Building hybrid applications utilizing React Native or Flutter, allowing a single codebase to natively compile and execute flawlessly on both iOS and Android."
         },
         {
-          "tags": [
-            "DISCOVERY",
-            "MARKET RESEARCH",
-            "MVP PLANNING",
-            "STRATEGY"
-          ],
+          "tags": ["DISCOVERY", "MARKET RESEARCH", "MVP PLANNING", "STRATEGY"],
           "title": "App Strategy & Consultation",
           "number": "04",
           "outcome": "A concrete product roadmap that minimizes technical debt and mitigates risks.",
@@ -3094,12 +2875,7 @@
           "description": "Aligning your mobile vision with intensive market research, evaluating technical feasibility, defining the MVP scope, and planning long-term scaling routes."
         },
         {
-          "tags": [
-            "MOBILE-FIRST",
-            "GESTURE CONTROLS",
-            "THUMB ZONE",
-            "PROTOTYPING"
-          ],
+          "tags": ["MOBILE-FIRST", "GESTURE CONTROLS", "THUMB ZONE", "PROTOTYPING"],
           "title": "Mobile Interface & Experience",
           "number": "05",
           "outcome": "An intuitive mobile application that guarantees smooth and natural user operation.",
@@ -3107,12 +2883,7 @@
           "description": "Executing mobile-first design philosophies, focusing intently on touch targets, thumb-zones, gesture interactions, and platform-specific navigation idioms."
         },
         {
-          "tags": [
-            "ASO",
-            "APP STORE CONNECT",
-            "LAUNCH",
-            "GOOGLE PLAY"
-          ],
+          "tags": ["ASO", "APP STORE CONNECT", "LAUNCH", "GOOGLE PLAY"],
           "title": "App Store Deployment & ASO",
           "number": "06",
           "outcome": "Successful deployment followed by accelerated organic user downloads.",
@@ -3209,19 +2980,10 @@
         "Nest JS",
         "Blockchain & Web3"
       ],
-      "related": [
-        "business-software-solutions",
-        "mobile-app-development",
-        "ai-ml-solutions"
-      ],
+      "related": ["business-software-solutions", "mobile-app-development", "ai-ml-solutions"],
       "services": [
         {
-          "tags": [
-            "ENTERPRISE",
-            "B2B SOLUTIONS",
-            "SCALABILITY",
-            "COMPLIANCE"
-          ],
+          "tags": ["ENTERPRISE", "B2B SOLUTIONS", "SCALABILITY", "COMPLIANCE"],
           "title": "Enterprise Software Engineering",
           "number": "01",
           "outcome": "Substantial overhead reduction and unified access across the whole enterprise.",
@@ -3229,12 +2991,7 @@
           "description": "Engineering highly complex, bespoke enterprise software capable of standardizing multi-department operations and handling millions of computational subsets."
         },
         {
-          "tags": [
-            "REFACTORING",
-            "MIGRATION",
-            "TECH DEBT",
-            "MICROSERVICES"
-          ],
+          "tags": ["REFACTORING", "MIGRATION", "TECH DEBT", "MICROSERVICES"],
           "title": "Legacy System Modernization",
           "number": "02",
           "outcome": "Future-proofed architecture prepared entirely for modern integration standards.",
@@ -3242,12 +2999,7 @@
           "description": "Auditing and migrating outdated, monolithic legacy systems into highly decoupled microservices running on modern cloud infrastructure."
         },
         {
-          "tags": [
-            "ERP",
-            "CRM",
-            "AUTOMATION",
-            "RESOURCE MANAGEMENT"
-          ],
+          "tags": ["ERP", "CRM", "AUTOMATION", "RESOURCE MANAGEMENT"],
           "title": "Custom CRM & ERP Solutions",
           "number": "03",
           "outcome": "A centralized command dashboard automating daily administrative burdens.",
@@ -3255,12 +3007,7 @@
           "description": "Building proprietary Customer Relationship Management (CRM) or Enterprise Resource Planning (ERP) systems specifically modeled around your unique workflows."
         },
         {
-          "tags": [
-            "SAAS",
-            "MULTITENANCY",
-            "AWS / CLOUD",
-            "MONETIZATION"
-          ],
+          "tags": ["SAAS", "MULTITENANCY", "AWS / CLOUD", "MONETIZATION"],
           "title": "SaaS Product Development",
           "number": "04",
           "outcome": "A fully launched, highly-secure SaaS product ready to generate recurring revenue.",
@@ -3268,12 +3015,7 @@
           "description": "Developing scalable, multitenant Software-as-a-Service (SaaS) platforms from foundational concept through to revenue-generating subscription models."
         },
         {
-          "tags": [
-            "REST / SOAP",
-            "PAYMENT GATEWAYS",
-            "WEBHOOKS",
-            "MIDDLEWARE"
-          ],
+          "tags": ["REST / SOAP", "PAYMENT GATEWAYS", "WEBHOOKS", "MIDDLEWARE"],
           "title": "Third-Party API Integrations",
           "number": "05",
           "outcome": "A unified digital ecosystem functioning synchronously without manual data entry.",
@@ -3281,12 +3023,7 @@
           "description": "Seamlessly connecting your custom software with disparate external systems, payment providers, legacy databases, or marketing tools through rigorous API bridges."
         },
         {
-          "tags": [
-            "CI/CD",
-            "DOCKER",
-            "KUBERNETES",
-            "AUTOMATION"
-          ],
+          "tags": ["CI/CD", "DOCKER", "KUBERNETES", "AUTOMATION"],
           "title": "DevOps & Continuous Delivery",
           "number": "06",
           "outcome": "The ability to deploy software updates multiple times daily with zero downtime.",
@@ -3383,12 +3120,7 @@
       ],
       "services": [
         {
-          "tags": [
-            "AUTOMATION",
-            "BPM",
-            "RPA",
-            "EFFICIENCY"
-          ],
+          "tags": ["AUTOMATION", "BPM", "RPA", "EFFICIENCY"],
           "title": "Workflow Process Automation",
           "number": "01",
           "outcome": "Thousands of labor hours saved annually and drastically reduced human error.",
@@ -3396,12 +3128,7 @@
           "description": "Identifying repetitive manual tasks and engineering automated software scripts to execute them flawlessly in fractions of standard operation time."
         },
         {
-          "tags": [
-            "FINTECH",
-            "INVOICING",
-            "SECURE DATA",
-            "COMPLIANCE"
-          ],
+          "tags": ["FINTECH", "INVOICING", "SECURE DATA", "COMPLIANCE"],
           "title": "Financial & Billing Systems",
           "number": "02",
           "outcome": "An airtight financial pipeline eliminating delayed payments and accounting errors.",
@@ -3409,12 +3136,7 @@
           "description": "Designing closed-loop financial tracking, automated invoicing, and corporate billing portals integrating securely with tier-1 banking APIs."
         },
         {
-          "tags": [
-            "HRMS",
-            "ONBOARDING",
-            "PAYROLL",
-            "INTERNAL WIKI"
-          ],
+          "tags": ["HRMS", "ONBOARDING", "PAYROLL", "INTERNAL WIKI"],
           "title": "Human Resource Portals",
           "number": "03",
           "outcome": "A highly synthesized internal culture backed by simple human resource tracking.",
@@ -3422,12 +3144,7 @@
           "description": "Creating comprehensive HR tracking suites handling employee onboarding, payroll allocations, attendance charting, and internal communication matrices."
         },
         {
-          "tags": [
-            "LOGISTICS",
-            "WAREHOUSING",
-            "TRACKING",
-            "SUPPLY CHAIN"
-          ],
+          "tags": ["LOGISTICS", "WAREHOUSING", "TRACKING", "SUPPLY CHAIN"],
           "title": "Inventory & Supply Chain",
           "number": "04",
           "outcome": "Zero inventory discrepancy and drastically lowered logistical overhead.",
@@ -3435,12 +3152,7 @@
           "description": "Deploying logistics solutions granting absolute real-time visibility into warehouse supplies, fleet tracking, shipping milestones, and supplier communication."
         },
         {
-          "tags": [
-            "CLIENT PORTAL",
-            "SECURE LOGIN",
-            "DOCUMENT SHARING",
-            "B2B"
-          ],
+          "tags": ["CLIENT PORTAL", "SECURE LOGIN", "DOCUMENT SHARING", "B2B"],
           "title": "Client Portal Dashboards",
           "number": "05",
           "outcome": "Unprecedented client transparency increasing customer satisfaction vertically.",
@@ -3448,12 +3160,7 @@
           "description": "Engineering secure entry portals where corporate clients or consumers can track their project status, submit tickets, and download secure documents."
         },
         {
-          "tags": [
-            "DISASTER RECOVERY",
-            "ENCRYPTION",
-            "CLOUD BACKUP",
-            "CONTINUITY"
-          ],
+          "tags": ["DISASTER RECOVERY", "ENCRYPTION", "CLOUD BACKUP", "CONTINUITY"],
           "title": "Data Backup & Recovery Systems",
           "number": "06",
           "outcome": "Absolute insurance preventing catastrophic data loss regardless of variable risks.",
@@ -3516,11 +3223,7 @@
         "headingLine1": "Get found by",
         "headingLine2": "the right buyers."
       },
-      "work": [
-        "The Embassy Inn",
-        "The Social Beacon",
-        "GreatWaterFilters"
-      ],
+      "work": ["The Embassy Inn", "The Social Beacon", "GreatWaterFilters"],
       "proof": [
         {
           "text": "A new booking website backed by search and content marketing, leading to more bookings, stronger brand awareness and better search rankings.",
@@ -3538,19 +3241,10 @@
         "Podcast management",
         "Analytics"
       ],
-      "related": [
-        "social-performance-marketing",
-        "website-design-development",
-        "branding"
-      ],
+      "related": ["social-performance-marketing", "website-design-development", "branding"],
       "services": [
         {
-          "tags": [
-            "TECHNICAL SEO",
-            "KEYWORD RESEARCH",
-            "ON-PAGE",
-            "LINK BUILDING"
-          ],
+          "tags": ["TECHNICAL SEO", "KEYWORD RESEARCH", "ON-PAGE", "LINK BUILDING"],
           "title": "Search Engine Optimization (SEO)",
           "number": "01",
           "outcome": "Sustained organic traffic and authoritative dominance over market keywords.",
@@ -3558,12 +3252,7 @@
           "description": "Executing deep technical, on-page, and off-page SEO strategies to dramatically increase your organic visibility and conquer high-value search queries."
         },
         {
-          "tags": [
-            "BLOGGING",
-            "WHITEPAPERS",
-            "VIDEO SCRIPTS",
-            "INBOUND"
-          ],
+          "tags": ["BLOGGING", "WHITEPAPERS", "VIDEO SCRIPTS", "INBOUND"],
           "title": "Content Marketing Strategy",
           "number": "02",
           "outcome": "Established industry thought-leadership and a robust inbound acquisition pipeline.",
@@ -3571,12 +3260,7 @@
           "description": "Producing valuable, authoritative long-form blogs, whitepapers, and video scripts designed to educate users and capture inbound traffic natively."
         },
         {
-          "tags": [
-            "DRIP CAMPAIGNS",
-            "NEWSLETTERS",
-            "KLAVIYO",
-            "LEAD NURTURING"
-          ],
+          "tags": ["DRIP CAMPAIGNS", "NEWSLETTERS", "KLAVIYO", "LEAD NURTURING"],
           "title": "Email Marketing Automation",
           "number": "03",
           "outcome": "Maximized customer lifetime value and an engaged direct-access audience.",
@@ -3584,12 +3268,7 @@
           "description": "Setting up sophisticated, automated drip campaigns and newsletters that progressively nurture cold leads into loyal, repeat customers."
         },
         {
-          "tags": [
-            "AEO",
-            "GEO",
-            "SCHEMA",
-            "ENTITY SEO"
-          ],
+          "tags": ["AEO", "GEO", "SCHEMA", "ENTITY SEO"],
           "title": "AI Search Optimization (AEO & GEO)",
           "number": "04",
           "outcome": "Your brand shows up where buyers now ask their questions.",
@@ -3652,12 +3331,7 @@
         "headingLine1": "Attention that turns",
         "headingLine2": "into revenue."
       },
-      "work": [
-        "Kokalachi",
-        "Fee-Fam",
-        "The Embassy Inn",
-        "The Social Beacon"
-      ],
+      "work": ["Kokalachi", "Fee-Fam", "The Embassy Inn", "The Social Beacon"],
       "proof": [
         {
           "text": "A paid ad campaign for a travel brand that delivered results within its first month.",
@@ -3690,19 +3364,10 @@
         "Retargeting",
         "Analytics & CRO"
       ],
-      "related": [
-        "search-content-marketing",
-        "branding",
-        "business-intelligence-solutions"
-      ],
+      "related": ["search-content-marketing", "branding", "business-intelligence-solutions"],
       "services": [
         {
-          "tags": [
-            "CONTENT CALENDAR",
-            "COMMUNITY",
-            "LINKEDIN",
-            "INSTAGRAM"
-          ],
+          "tags": ["CONTENT CALENDAR", "COMMUNITY", "LINKEDIN", "INSTAGRAM"],
           "title": "Social Media Management (SMM)",
           "number": "01",
           "outcome": "A fiercely loyal online community and significantly expanded brand awareness.",
@@ -3710,12 +3375,7 @@
           "description": "Curating high-quality content, fostering community engagement, and executing targeted campaigns across major platforms like LinkedIn, Instagram, and Twitter."
         },
         {
-          "tags": [
-            "GOOGLE ADS",
-            "META ADS",
-            "RETARGETING",
-            "ROI OPTIMIZATION"
-          ],
+          "tags": ["GOOGLE ADS", "META ADS", "RETARGETING", "ROI OPTIMIZATION"],
           "title": "Pay-Per-Click Advertising (PPC)",
           "number": "02",
           "outcome": "Immediate, scalable influxes of highly qualified commercial leads.",
@@ -3723,12 +3383,7 @@
           "description": "Designing highly structured Google Ads and social media paid funnels meticulously optimized for maximum ROI and lowest cost-per-acquisition."
         },
         {
-          "tags": [
-            "A/B TESTING",
-            "HEATMAPS",
-            "ANALYTICS",
-            "UX ADJUSTMENTS"
-          ],
+          "tags": ["A/B TESTING", "HEATMAPS", "ANALYTICS", "UX ADJUSTMENTS"],
           "title": "Conversion Rate Optimization (CRO)",
           "number": "03",
           "outcome": "Significantly more leads generated without increasing existing ad spend.",
@@ -3736,12 +3391,7 @@
           "description": "Analyzing user behavior metrics via heatmaps and A/B testing to algorithmically improve landing page layouts and maximize conversion yields."
         },
         {
-          "tags": [
-            "REELS",
-            "CREATORS",
-            "UGC",
-            "VIDEO ADS"
-          ],
+          "tags": ["REELS", "CREATORS", "UGC", "VIDEO ADS"],
           "title": "Influencer & Video Marketing",
           "number": "04",
           "outcome": "Content people actually watch, and a brand they remember.",
@@ -3833,12 +3483,7 @@
       ],
       "services": [
         {
-          "tags": [
-            "SUPERVISED LEARNING",
-            "CLASSIFICATION",
-            "NEURAL NETWORKS",
-            "TRAINING"
-          ],
+          "tags": ["SUPERVISED LEARNING", "CLASSIFICATION", "NEURAL NETWORKS", "TRAINING"],
           "title": "Custom Machine Learning Models",
           "number": "01",
           "outcome": "A fully proprietary AI engine uniquely wired exclusively to solve your specific niche.",
@@ -3846,12 +3491,7 @@
           "description": "Training bespoke Machine Learning algorithms natively using your proprietary datasets to classify, parse, or identify entirely unique enterprise logic parameters."
         },
         {
-          "tags": [
-            "NLP",
-            "SENTIMENT ANALYSIS",
-            "TEXT PARSING",
-            "CHATBOTS"
-          ],
+          "tags": ["NLP", "SENTIMENT ANALYSIS", "TEXT PARSING", "CHATBOTS"],
           "title": "Natural Language Processing (NLP)",
           "number": "02",
           "outcome": "The ability to instantaneously digest millions of user reviews or conversational logs.",
@@ -3859,12 +3499,7 @@
           "description": "Implementing NLP algorithms to comprehend, parse, translate, and autonomously synthesize profound lengths of human text into structured analytical data."
         },
         {
-          "tags": [
-            "OPENAI API",
-            "GENERATIVE AI",
-            "LLMS",
-            "PROMPT ENGINEERING"
-          ],
+          "tags": ["OPENAI API", "GENERATIVE AI", "LLMS", "PROMPT ENGINEERING"],
           "title": "Generative AI Integration",
           "number": "03",
           "outcome": "A massively scaled, hyper-intelligent automation capability previously impossible.",
@@ -3872,12 +3507,7 @@
           "description": "Connecting powerful Large Language Models directly securely to internal systems empowering instant drafting, coding, or generative problem solving."
         },
         {
-          "tags": [
-            "COMPUTER VISION",
-            "OCR",
-            "IMAGE RECOGNITION",
-            "AI"
-          ],
+          "tags": ["COMPUTER VISION", "OCR", "IMAGE RECOGNITION", "AI"],
           "title": "Computer Vision Systems",
           "number": "04",
           "outcome": "Complete automated categorization and verification of visual real-world assets.",
@@ -3885,12 +3515,7 @@
           "description": "Training visual AI capable of immediately identifying objects, faces, optical anomalies, or character strings (OCR) within direct live video or photographic feeds."
         },
         {
-          "tags": [
-            "CONVERSATIONAL AI",
-            "CUSTOMER SUPPORT",
-            "VIRTUAL ASSISTANTS",
-            "AUTOMATION"
-          ],
+          "tags": ["CONVERSATIONAL AI", "CUSTOMER SUPPORT", "VIRTUAL ASSISTANTS", "AUTOMATION"],
           "title": "AI Chatbots & Virtual Assistants",
           "number": "05",
           "outcome": "Radical decreases in human support overhead while sustaining 24/7 engagement metrics.",
@@ -3898,12 +3523,7 @@
           "description": "Engineering extremely fluid conversational interfaces capable of managing complex Tier 1 and Tier 2 customer service inquiries synchronously at total scale."
         },
         {
-          "tags": [
-            "RECOMMENDATION SYSTEM",
-            "UPSELLING",
-            "BEHAVIORAL ALGORITHMS",
-            "E-COMMERCE"
-          ],
+          "tags": ["RECOMMENDATION SYSTEM", "UPSELLING", "BEHAVIORAL ALGORITHMS", "E-COMMERCE"],
           "title": "Recommendation & Discovery Engines",
           "number": "06",
           "outcome": "Exponential gains natively in consumer basket sizes and cross-sectional engagement.",
@@ -3987,19 +3607,10 @@
         "Data visualisation",
         "Advanced analytics"
       ],
-      "related": [
-        "ai-ml-solutions",
-        "business-software-solutions",
-        "social-performance-marketing"
-      ],
+      "related": ["ai-ml-solutions", "business-software-solutions", "social-performance-marketing"],
       "services": [
         {
-          "tags": [
-            "DATA LAKE",
-            "ETL PROCESSES",
-            "CLOUD WAREHOUSE",
-            "AGGREGATION"
-          ],
+          "tags": ["DATA LAKE", "ETL PROCESSES", "CLOUD WAREHOUSE", "AGGREGATION"],
           "title": "Data Warehousing",
           "number": "01",
           "outcome": "A fully unified underlying data infrastructure primed for high-speed querying.",
@@ -4007,12 +3618,7 @@
           "description": "Structuring massive, scalable data warehouses that safely aggregate disjointed enterprise data into a single source of categorical truth."
         },
         {
-          "tags": [
-            "DATA VISUALIZATION",
-            "DASHBOARDS",
-            "TABLEAU",
-            "POWERBI"
-          ],
+          "tags": ["DATA VISUALIZATION", "DASHBOARDS", "TABLEAU", "POWERBI"],
           "title": "Interactive Dashboards & Visualization",
           "number": "02",
           "outcome": "Immediate strategic clarity allowing executives to comprehend matrixed realities instantly.",
@@ -4020,12 +3626,7 @@
           "description": "Building breathtaking, real-time visual dashboards utilizing modern analytics (PowerBI, Tableau) to visually interpret extremely complex datasets."
         },
         {
-          "tags": [
-            "PREDICTIVE MODELS",
-            "FORECASTING",
-            "TREND ANALYSIS",
-            "BIG DATA"
-          ],
+          "tags": ["PREDICTIVE MODELS", "FORECASTING", "TREND ANALYSIS", "BIG DATA"],
           "title": "Predictive Analytics & Forecasting",
           "number": "03",
           "outcome": "The definitive absolute advantage of acting decisively before market shifts occur.",
@@ -4033,12 +3634,7 @@
           "description": "Deploying proprietary models that analyze vast historical behaviors to accurately forecast future sales trends, market downturns, and supply deficits."
         },
         {
-          "tags": [
-            "KPI TRACKING",
-            "REPORT AUTOMATION",
-            "PERFORMANCE",
-            "CORPORATE"
-          ],
+          "tags": ["KPI TRACKING", "REPORT AUTOMATION", "PERFORMANCE", "CORPORATE"],
           "title": "Business Performance Reporting",
           "number": "04",
           "outcome": "Consistent, error-free oversight on the exact health of overarching enterprise initiatives.",
@@ -4046,12 +3642,7 @@
           "description": "Automating cyclic performance reports tracking granular Key Performance Indicators (KPIs) and delivering them securely across executive channels."
         },
         {
-          "tags": [
-            "DATA GOVERNANCE",
-            "CLEANSING",
-            "ACCURACY",
-            "COMPLIANCE"
-          ],
+          "tags": ["DATA GOVERNANCE", "CLEANSING", "ACCURACY", "COMPLIANCE"],
           "title": "Data Cleansing & Governance",
           "number": "05",
           "outcome": "Complete elimination of skewed analytical decision-making caused by 'dirty data'.",
@@ -4059,12 +3650,7 @@
           "description": "Scrubbing existing datasets for corrupt, replicated, or inaccurate vectors while establishing harsh data governance and compliance protocols."
         },
         {
-          "tags": [
-            "DATA MINING",
-            "WEB SCRAPING",
-            "ALGORITHMIC EXTRACTION",
-            "GLOBAL DATA"
-          ],
+          "tags": ["DATA MINING", "WEB SCRAPING", "ALGORITHMIC EXTRACTION", "GLOBAL DATA"],
           "title": "Real-time Mining Strategies",
           "number": "06",
           "outcome": "Access to hidden market insights previously obfuscated to manual analysts.",
@@ -4147,12 +3733,7 @@
       ],
       "services": [
         {
-          "tags": [
-            "FRONTEND",
-            "BACKEND",
-            "FULL-STACK",
-            "MOBILE"
-          ],
+          "tags": ["FRONTEND", "BACKEND", "FULL-STACK", "MOBILE"],
           "title": "Dedicated Developers",
           "number": "01",
           "outcome": "More shipped features without growing your payroll.",
@@ -4160,12 +3741,7 @@
           "description": "Frontend, backend, full-stack and mobile developers who join your standups, work in your repositories and ship to your process."
         },
         {
-          "tags": [
-            "FIGMA",
-            "DESIGN SYSTEMS",
-            "PROTOTYPES",
-            "RESEARCH"
-          ],
+          "tags": ["FIGMA", "DESIGN SYSTEMS", "PROTOTYPES", "RESEARCH"],
           "title": "UI/UX Designers",
           "number": "02",
           "outcome": "Consistent, user-tested design at the pace your team builds.",
@@ -4173,12 +3749,7 @@
           "description": "Product and interface designers for research, wireframes, design systems and polished screens, working alongside your developers."
         },
         {
-          "tags": [
-            "AUTOMATION",
-            "REGRESSION",
-            "MOBILE QA",
-            "API TESTING"
-          ],
+          "tags": ["AUTOMATION", "REGRESSION", "MOBILE QA", "API TESTING"],
           "title": "QA & Test Engineers",
           "number": "03",
           "outcome": "Fewer bugs in production and calmer release days.",
@@ -4186,12 +3757,7 @@
           "description": "Manual and automated testing across web and mobile, so releases go out on time without surprises for your users."
         },
         {
-          "tags": [
-            "AWS",
-            "CI/CD",
-            "DOCKER",
-            "MONITORING"
-          ],
+          "tags": ["AWS", "CI/CD", "DOCKER", "MONITORING"],
           "title": "DevOps & Cloud Engineers",
           "number": "04",
           "outcome": "Reliable infrastructure that grows with your traffic.",
@@ -4199,12 +3765,7 @@
           "description": "Engineers who set up and run your cloud, CI/CD pipelines and monitoring, keeping systems fast, secure and affordable."
         },
         {
-          "tags": [
-            "AGILE",
-            "SCRUM",
-            "ROADMAPS",
-            "REPORTING"
-          ],
+          "tags": ["AGILE", "SCRUM", "ROADMAPS", "REPORTING"],
           "title": "Project & Delivery Managers",
           "number": "05",
           "outcome": "Predictable delivery and clear visibility for leadership.",
@@ -4212,12 +3773,7 @@
           "description": "Experienced managers who plan sprints, keep stakeholders aligned and make sure the work lands on schedule."
         },
         {
-          "tags": [
-            "CROSS-FUNCTIONAL",
-            "OWNERSHIP",
-            "FAST START",
-            "FLEXIBLE"
-          ],
+          "tags": ["CROSS-FUNCTIONAL", "OWNERSHIP", "FAST START", "FLEXIBLE"],
           "title": "Dedicated Product Teams",
           "number": "06",
           "outcome": "A complete team, productive from week one, without months of hiring.",
@@ -4281,12 +3837,7 @@
       "related": [],
       "services": [
         {
-          "tags": [
-            "TECHNICAL SEO",
-            "KEYWORD RESEARCH",
-            "ON-PAGE",
-            "LINK BUILDING"
-          ],
+          "tags": ["TECHNICAL SEO", "KEYWORD RESEARCH", "ON-PAGE", "LINK BUILDING"],
           "title": "Search Engine Optimization (SEO)",
           "number": "01",
           "outcome": "Sustained organic traffic and authoritative dominance over market keywords.",
@@ -4294,12 +3845,7 @@
           "description": "Executing deep technical, on-page, and off-page SEO strategies to dramatically increase your organic visibility and conquer high-value search queries."
         },
         {
-          "tags": [
-            "CONTENT CALENDAR",
-            "COMMUNITY",
-            "LINKEDIN",
-            "INSTAGRAM"
-          ],
+          "tags": ["CONTENT CALENDAR", "COMMUNITY", "LINKEDIN", "INSTAGRAM"],
           "title": "Social Media Management (SMM)",
           "number": "02",
           "outcome": "A fiercely loyal online community and significantly expanded brand awareness.",
@@ -4307,12 +3853,7 @@
           "description": "Curating high-quality content, fostering community engagement, and executing targeted campaigns across major platforms like LinkedIn, Instagram, and Twitter."
         },
         {
-          "tags": [
-            "GOOGLE ADS",
-            "META ADS",
-            "RETARGETING",
-            "ROI OPTIMIZATION"
-          ],
+          "tags": ["GOOGLE ADS", "META ADS", "RETARGETING", "ROI OPTIMIZATION"],
           "title": "Pay-Per-Click Advertising (PPC)",
           "number": "03",
           "outcome": "Immediate, scalable influxes of highly qualified commercial leads.",
@@ -4320,12 +3861,7 @@
           "description": "Designing highly structured Google Ads and social media paid funnels meticulously optimized for maximum ROI and lowest cost-per-acquisition."
         },
         {
-          "tags": [
-            "BLOGGING",
-            "WHITEPAPERS",
-            "VIDEO SCRIPTS",
-            "INBOUND"
-          ],
+          "tags": ["BLOGGING", "WHITEPAPERS", "VIDEO SCRIPTS", "INBOUND"],
           "title": "Content Marketing Strategy",
           "number": "04",
           "outcome": "Established industry thought-leadership and a robust inbound acquisition pipeline.",
@@ -4333,12 +3869,7 @@
           "description": "Producing valuable, authoritative long-form blogs, whitepapers, and video scripts designed to educate users and capture inbound traffic natively."
         },
         {
-          "tags": [
-            "DRIP CAMPAIGNS",
-            "NEWSLETTERS",
-            "KLAVIYO",
-            "LEAD NURTURING"
-          ],
+          "tags": ["DRIP CAMPAIGNS", "NEWSLETTERS", "KLAVIYO", "LEAD NURTURING"],
           "title": "Email Marketing Automation",
           "number": "05",
           "outcome": "Maximized customer lifetime value and an engaged direct-access audience.",
@@ -4346,12 +3877,7 @@
           "description": "Setting up sophisticated, automated drip campaigns and newsletters that progressively nurture cold leads into loyal, repeat customers."
         },
         {
-          "tags": [
-            "A/B TESTING",
-            "HEATMAPS",
-            "ANALYTICS",
-            "UX ADJUSTMENTS"
-          ],
+          "tags": ["A/B TESTING", "HEATMAPS", "ANALYTICS", "UX ADJUSTMENTS"],
           "title": "Conversion Rate Optimization (CRO)",
           "number": "06",
           "outcome": "Significantly more leads generated without increasing existing ad spend.",

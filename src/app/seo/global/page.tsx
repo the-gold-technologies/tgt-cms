@@ -139,7 +139,12 @@ export default function GlobalSEOPage() {
           description="Manage website-wide meta tags, tracking codes, favicon, and social profiles."
         />
         <div className="mb-2">
-          <SaveButton onClick={handleSave} disabled={isSaving} sticky={false} className="w-auto px-10" />
+          <SaveButton
+            onClick={handleSave}
+            disabled={isSaving}
+            sticky={false}
+            className="w-auto px-10"
+          />
         </div>
       </div>
 

@@ -15,10 +15,7 @@ import { isWebsitePage, PAGE_SECTIONS } from "@/lib/websiteSections";
 export const rejectUnlessWebsite = (request: Request) =>
   isWebsiteRequest(request)
     ? null
-    : NextResponse.json(
-        { success: false, error: "Unauthorized" },
-        { status: 401 },
-      );
+    : NextResponse.json({ success: false, error: "Unauthorized" }, { status: 401 });
 
 export interface PageSEO {
   title: string;
@@ -83,8 +80,7 @@ export async function loadPageSeo(slug: string): Promise<PageSEO | null> {
     metaTitle: global?.siteTitle || seo.metaTitle,
     metaDescription: global?.siteDescription || seo.metaDescription,
     schema: global?.schema || seo.schema,
-    headingOptions:
-      toHeadingTag(global?.headingOptions ?? null) || seo.headingOptions,
+    headingOptions: toHeadingTag(global?.headingOptions ?? null) || seo.headingOptions,
   };
 }
 
@@ -107,18 +103,12 @@ export async function loadPageSections(
     select: { type: true, content: true },
   });
   return Object.fromEntries(
-    rows.map((row) => [
-      row.type,
-      (blogBodies ? row : withoutBlogBodies(row)).content,
-    ]),
+    rows.map((row) => [row.type, (blogBodies ? row : withoutBlogBodies(row)).content]),
   );
 }
 
 /** { success, data, seo } for a page with the section map as data. */
-export async function pageResponse(
-  slug: string,
-  { blogBodies }: { blogBodies: boolean },
-) {
+export async function pageResponse(slug: string, { blogBodies }: { blogBodies: boolean }) {
   const [data, seo] = await Promise.all([
     loadPageSections(slug, { blogBodies }),
     loadPageSeo(slug),
@@ -155,8 +145,6 @@ export async function customPageResponse(slug: string) {
     }),
     loadPageSeo(slug),
   ]);
-  const sections: CustomPageSection[] = rows.map((row) =>
-    withoutBlogBodies(row),
-  );
+  const sections: CustomPageSection[] = rows.map((row) => withoutBlogBodies(row));
   return { success: true as const, custom: true as const, sections, seo };
 }

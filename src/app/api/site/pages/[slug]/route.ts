@@ -1,9 +1,5 @@
 import { NextResponse } from "next/server";
-import {
-  customPageResponse,
-  pageResponse,
-  rejectUnlessWebsite,
-} from "@/lib/siteContent";
+import { customPageResponse, pageResponse, rejectUnlessWebsite } from "@/lib/siteContent";
 import { isWebsitePage } from "@/lib/websiteSections";
 
 /**
@@ -17,19 +13,13 @@ import { isWebsitePage } from "@/lib/websiteSections";
  *   { success, custom: true, sections: [{ id, type, content, order }], seo }, every section
  *   in page order, so a section type can be used more than once.
  */
-export async function GET(
-  request: Request,
-  { params }: { params: Promise<{ slug: string }> },
-) {
+export async function GET(request: Request, { params }: { params: Promise<{ slug: string }> }) {
   const denied = rejectUnlessWebsite(request);
   if (denied) return denied;
 
   const { slug } = await params;
   const notFound = () =>
-    NextResponse.json(
-      { success: false, error: "Page not found" },
-      { status: 404 },
-    );
+    NextResponse.json({ success: false, error: "Page not found" }, { status: 404 });
 
   try {
     if (!isWebsitePage(slug)) {
@@ -42,9 +32,6 @@ export async function GET(
     return NextResponse.json(page);
   } catch (error) {
     console.error(`[site] page ${slug}:`, error);
-    return NextResponse.json(
-      { success: false, error: "Internal Server Error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, error: "Internal Server Error" }, { status: 500 });
   }
 }

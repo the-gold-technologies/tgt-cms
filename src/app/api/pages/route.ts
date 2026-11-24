@@ -62,10 +62,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ success: true, data: transformedPages });
   } catch (error) {
     console.error("Error fetching pages:", error);
-    return NextResponse.json(
-      { success: false, error: "Internal Server Error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, error: "Internal Server Error" }, { status: 500 });
   }
 }
 
@@ -74,10 +71,7 @@ export async function POST(request: Request) {
     const { title, type = "standard", placement } = await request.json();
 
     if (!title) {
-      return NextResponse.json(
-        { success: false, error: "Title is required" },
-        { status: 400 },
-      );
+      return NextResponse.json({ success: false, error: "Title is required" }, { status: 400 });
     }
 
     // Where the new page's link is shown on the website: navbar, footer or both (optional)
@@ -138,9 +132,6 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true, data: newPage }, { status: 201 });
   } catch (error) {
     console.error("Error creating page:", error);
-    return NextResponse.json(
-      { success: false, error: "Internal Server Error" },
-      { status: 500 },
-    );
+    return NextResponse.json({ success: false, error: "Internal Server Error" }, { status: 500 });
   }
 }
