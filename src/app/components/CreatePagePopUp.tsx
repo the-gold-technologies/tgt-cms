@@ -23,10 +23,6 @@ export const CreatePagePopUp = ({
       toast.error("Please enter a page name");
       return;
     }
-    if (!placement) {
-      toast.error("Please choose where to show the page link");
-      return;
-    }
 
     setIsSubmitting(true);
     const toastId = toast.loading("Creating page...");
@@ -35,7 +31,7 @@ export const CreatePagePopUp = ({
       const res = await fetch("/api/pages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ title: pageName, placement }),
+        body: JSON.stringify({ title: pageName, placement: placement || "" }),
       });
 
       const json = await res.json();
@@ -99,7 +95,9 @@ export const CreatePagePopUp = ({
                 {/* Form */}
                 <form onSubmit={handleSubmit} className="space-y-6 text-left">
                   <div className="flex flex-col gap-2">
-                    <label className="block text-sm font-semibold text-[#0B0F29]">Page Name*</label>
+                    <label className="block text-sm font-semibold text-[#0B0F29]">
+                      Page Name*
+                    </label>
                     <input
                       type="text"
                       required
@@ -113,29 +111,29 @@ export const CreatePagePopUp = ({
                   {/* Where the page's link appears on the website */}
                   <fieldset className="flex flex-col gap-2">
                     <legend className="mb-2 block text-sm font-semibold text-[#0B0F29]">
-                      Show link in*
+                      Show link in{" "}
+                      <span className="font-normal text-gray-400">
+                        (optional)
+                      </span>
                     </legend>
                     <div className="grid grid-cols-3 gap-2">
                       {NAV_PLACEMENTS.map((option) => (
-                        <label
+                        <button
+                          type="button"
                           key={option.value}
+                          onClick={() =>
+                            setPlacement((prev) =>
+                              prev === option.value ? "" : option.value,
+                            )
+                          }
                           className={`cursor-pointer rounded-xl border px-3 py-3 text-center text-sm font-medium transition-colors ${
                             placement === option.value
                               ? "border-[#0B0F29] bg-[#0B0F29] text-white"
                               : "border-gray-200 bg-gray-50 text-black hover:border-[#D4AF37]"
                           }`}
                         >
-                          <input
-                            type="radio"
-                            name="placement"
-                            value={option.value}
-                            checked={placement === option.value}
-                            onChange={() => setPlacement(option.value)}
-                            required
-                            className="sr-only"
-                          />
                           {option.label}
-                        </label>
+                        </button>
                       ))}
                     </div>
                   </fieldset>
